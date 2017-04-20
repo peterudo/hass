@@ -50,7 +50,8 @@ sun:
 
 # Weather Prediction
 sensor:
-  platform: yr
+  - platform: yr
+  - platform: tellstick
 
 # Text to speech
 tts:
@@ -69,3 +70,5 @@ rfxtrx:
 switch:
   platform: rfxtrx
   automatic_add: True
+
+tellstick:
