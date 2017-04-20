@@ -65,3 +65,7 @@ zwave:
 
 rfxtrx:
   device: /dev/ttyUSB0
+
+switch:
+  platform: rfxtrx
+  automatic_add: True
