@@ -61,3 +61,7 @@ group: !include groups.yaml
 zwave:
   usb_path: /dev/ttyACM0
   config_path: /usr/local/lib/python3.4/dist-packages/libopenzwave-0.3.3-py3.4-linux-armv7l.egg/config
+  debug: true
+
+rfxtrx:
+  device: /dev/ttyUSB0
