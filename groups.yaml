@@ -13,7 +13,7 @@ livingroom:
     - switch.bryter_1
     - switch.bryter_2
     - switch.bryter_3
-    - zwave.aeotec_zw090_zstick_gen5_1
+    - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
     - media_player.stuecast
 
 outside:
