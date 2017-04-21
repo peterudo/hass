@@ -19,8 +19,9 @@ livingroom:
 outside:
   name: Ute
   entities:
-    - sensor.yr_symbol
     - sensor.basseng_temperature
+    - sensor.yr_temperature
+    - sensor.pws_temp_c
 
 masterbedroom:
   name: Soverom

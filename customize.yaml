@@ -13,3 +13,9 @@ light.hue_ambiance_lamp_2:
 
 switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
   friendly_name: Lys ved TV
+
+sensor.yr_temperature
+  friendly_name: Yr
+
+sensor.pws_temp_c
+  friendly_name: WU
