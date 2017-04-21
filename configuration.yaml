@@ -113,8 +113,8 @@ switch:
       fire_event: True
     0710010148080760:
       name: Remote btn 4C
-    0710010048080760:
       fire_event: True
+    0710010048080760:
       name: Remote btn 4D
       fire_event: True
     0913002056545501a650:
