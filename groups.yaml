@@ -9,6 +9,7 @@ default_view:
 livingroom:
   name: Stue
   entities:
+    - livingroom_scene
     - light.fibaro_system_fgd212_dimmer_2_level_6_0
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
@@ -16,14 +17,21 @@ livingroom:
     - switch.bryter_3
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
 
+
+masterbedroom:
+  name: Soverom
+  entities:
+    - light.hue_ambiance_lamp_1
+
+livingroom_scene:
+  name: Presets
+  entities:
+  - scene.dempet_lys
+  - scene.natt
+
 outside:
   name: Ute
   entities:
     - sensor.basseng_temperature
     - sensor.yr_temperature
     - sensor.pws_temp_c
-
-masterbedroom:
-  name: Soverom
-  entities:
-    - light.hue_ambiance_lamp_1
