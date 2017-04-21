@@ -53,6 +53,9 @@ sensor:
   - platform: yr
   - platform: rfxtrx
     automatic_add: True
+    devices:
+      085007058700001559:
+        name: Basseng
 
 # Text to speech
 tts:
