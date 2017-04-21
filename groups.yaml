@@ -9,14 +9,13 @@ default_view:
 livingroom:
   name: Stue
   entities:
-    - livingroom_scene
+    - group.livingroom_scene
     - light.fibaro_system_fgd212_dimmer_2_level_6_0
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.bryter_2
     - switch.bryter_3
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
-
 
 masterbedroom:
   name: Soverom
