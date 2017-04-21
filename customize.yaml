@@ -1,3 +1,12 @@
 sensor.basseng_temperature:
   friendly_name: Basseng
   icon: mdi:pool
+
+light.fibaro_system_fgd212_dimmer_2_level_6_0:
+  friendly_name: Lys, trappeoppgang
+
+light.hue_ambiance_lamp_1:
+  friendly_name: Hue, soverom
+
+light.hue_ambiance_lamp_2:
+  friendly_name: Hue, stue

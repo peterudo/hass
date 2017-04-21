@@ -1,0 +1,26 @@
+group:
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.livingroom
+      - group.outside
+      - group.masterbedroom
+
+  livingroom:
+    name: Stue
+    entities:
+      - light.fibaro_system_fgd212_dimmer_2_level_6_0
+      - media_player.stuecast
+
+  outside:
+    name: Ute
+    view: yes
+    entities:
+      - sensor.yr_symbol
+      - sensor.basseng_temperature
+
+  masterbedroom:
+    name: Soverom
+    entities:
+      - light.hue_ambiance_lamp_1
