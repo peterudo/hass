@@ -10,6 +10,7 @@ livingroom:
   name: Stue
   entities:
     - light.fibaro_system_fgd212_dimmer_2_level_6_0
+    - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.bryter_2
     - switch.bryter_3
