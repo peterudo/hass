@@ -7,9 +7,6 @@ homeassistant:
   time_zone: Europe/Oslo
   customize: !include customize.yaml
 
-# Show links to resources in log and frontend
-introduction:
-
 # Enables the frontend
 frontend:
 
@@ -40,14 +37,7 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
-sensor:
-  - platform: yr
-  - platform: rfxtrx
-    automatic_add: True
-    devices:
-      085007058700001559:
-        name: Basseng
+sensor: !include_dir_list sensors/
 
 # Text to speech
 tts:

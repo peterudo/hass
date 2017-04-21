@@ -15,7 +15,6 @@ livingroom:
     - switch.bryter_2
     - switch.bryter_3
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
-    - media_player.stuecast
 
 outside:
   name: Ute
