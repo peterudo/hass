@@ -74,3 +74,6 @@ rfxtrx:
 switch:
   platform: rfxtrx
   automatic_add: True
+  devices:
+    071001004f080760:
+      name: Stuelys
