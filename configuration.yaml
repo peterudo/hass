@@ -92,10 +92,14 @@ rfxtrx:
 switch:
   platform: rfxtrx
   automatic_add: True
+  signal_repetitions: 2
   devices:
     0710010f4f080750:
       name: Bryter 1
+      fire_event: True
     071001014e080760:
       name: Bryter 2
+      fire_event: True
     071001204c080750:
       name: Bryter 3
+      fire_event: True
