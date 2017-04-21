@@ -61,12 +61,12 @@ tts:
 group: !include groups.yaml
 
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/ttyACM1
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
   debug: true
 
 rfxtrx:
-  device: /dev/ttyUSB0
+  device: /dev/ttyUSB1
 
 switch:
   platform: rfxtrx
