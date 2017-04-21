@@ -13,8 +13,6 @@ livingroom:
     - light.fibaro_system_fgd212_dimmer_2_level_6_0
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
-    - switch.bryter_2
-    - switch.bryter_3
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
 
 masterbedroom:
@@ -26,6 +24,7 @@ livingroom_scene:
   name: Presets
   entities:
   - scene.dempet_lys
+  - scene.kraftig_lys
   - scene.natt
 
 outside:
