@@ -10,11 +10,14 @@ livingroom:
   name: Stue
   entities:
     - light.fibaro_system_fgd212_dimmer_2_level_6_0
+    - switch.bryter_1
+    - switch.bryter_2
+    - switch.bryter_3
+    - zwave.aeotec_zw090_zstick_gen5_1
     - media_player.stuecast
 
 outside:
   name: Ute
-  view: yes
   entities:
     - sensor.yr_symbol
     - sensor.basseng_temperature
