@@ -5,6 +5,8 @@ default_view:
     - group.livingroom
     - group.outside
     - group.masterbedroom
+    - media_player.argon_inet2_002261edde0a
+    - media_player.stuecast
 
 livingroom:
   name: Stue

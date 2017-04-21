@@ -103,3 +103,16 @@ switch:
     071001204c080750:
       name: Bryter 3
       fire_event: True
+    0710017248080760:
+      name: Remote btn 4
+      fire_event: True
+
+automation:
+  - alias: Use remote to enable scene
+    trigger:
+      platform: event
+      event_type: button_pressed
+      event_data: {"state": "on", "entity_id": "switch.remote_btn_4"}
+    action:
+      service: scene.turn_on
+      entity_id: scene.kraftig_lys
