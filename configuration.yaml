@@ -108,6 +108,9 @@ switch:
     0710010248080740:
       name: Remote btn 4A
       fire_event: True
+    07100a0041010000:
+      name: RA1
+      fire_event: True
 
 automation:
   - alias: Use remote to enable scene
