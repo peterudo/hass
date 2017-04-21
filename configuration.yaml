@@ -51,6 +51,8 @@ sun:
 # Weather Prediction
 sensor:
   - platform: yr
+  - platform: rfxtrx
+    automatic_add: True
 
 # Text to speech
 tts:
@@ -67,9 +69,5 @@ rfxtrx:
   device: /dev/ttyUSB0
 
 switch:
-  platform: rfxtrx
-  automatic_add: True
-
-sensor:
   platform: rfxtrx
   automatic_add: True
