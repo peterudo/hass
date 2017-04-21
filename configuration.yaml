@@ -5,7 +5,7 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: metric
   time_zone: Europe/Oslo
-	customize: !include customize.yaml
+  customize: !include customize.yaml
 
 # Show links to resources in log and frontend
 introduction:
