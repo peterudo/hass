@@ -108,53 +108,6 @@ switch:
     0710010248080740:
       name: Remote btn 4A
       fire_event: True
-    0710010248080760:
-      name: Remote btn 4B
-      fire_event: True
-    0710010148080760:
-      name: Remote btn 4C
-      fire_event: True
-    0710010048080760:
-      name: Remote btn 4D
-      fire_event: True
-    0913002056545501a650:
-      name: Remote btn 4E
-      fire_event: True
-    0913006854545701a660:
-      name: Remote btn 4f
-      fire_event: True
-    0913002d54d45701a350:
-      name: Remote btn 4g
-      fire_event: True
-    091300185454d501a850:
-      name: Remote btn 4h
-      fire_event: True
-    0913002654565701a350:
-      name: Remote btn 4i
-      fire_event: True
-    0913000154555501a650:
-      name: Remote btn 4j
-      fire_event: True
-    0913000354555701a350:
-      name: Remote btn 4k
-      fire_event: True
-    09130070545c5501a650l:
-      name: Remote btn 4l
-      fire_event: True
-    09130032545d5701a650:
-      name: Remote btn 4m
-      fire_event: True
-    0913002354565501a650:
-      name: Remote btn 4n
-      fire_event: True
-    091300545c545501a850:
-      name: Remote btn 4o
-      fire_event: True
-    0710015150080750:
-      name: Remote btn 4p
-      fire_event: True
-
-
 
 automation:
   - alias: Use remote to enable scene
@@ -162,51 +115,6 @@ automation:
       - platform: event
         event_type: button_pressed
         event_data: {"state": "on", "entity_id": "switch.remote_btn_4a"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4b"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4c"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4d"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4e"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4f"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4g"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4h"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4i"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4j"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4k"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4l"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4m"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4n"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4o"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4p"}
     action:
       service: scene.turn_on
       entity_id: scene.kraftig_lys
