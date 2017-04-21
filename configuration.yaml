@@ -35,7 +35,7 @@ scene:
         state: off
       light.fibaro_system_fgd212_dimmer_2_level_6_0:
         state: on
-        brightness: 20
+        brightness: 40
       light.hue_ambiance_lamp_2:
         brightness: 80
         color_temp: 500
@@ -52,7 +52,7 @@ scene:
         brightness: 100
       light.hue_ambiance_lamp_2:
         brightness: 100
-        color_temp: 200
+        color_temp: 300
         state: on
 
 # Checks for available updates
