@@ -69,11 +69,11 @@ zwave:
   debug: true
 
 rfxtrx:
-  device: /dev/ttyUSB1
+  device: /dev/ttyUSB0
 
 switch:
   platform: rfxtrx
   automatic_add: True
   devices:
-    071001004f080760:
+    071010044104:
       name: Stuelys
