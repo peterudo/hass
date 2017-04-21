@@ -74,3 +74,10 @@ rfxtrx:
 switch:
   platform: rfxtrx
   automatic_add: True
+  devices:
+    0710010f4f080750:
+      name: Bryter 1
+    071001014e080760:
+      name: Bryter 2
+    071001204c080750:
+      name: Bryter 3
