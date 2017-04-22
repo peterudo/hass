@@ -157,9 +157,8 @@ automation:
         event_type: button_pressed
         event_data: {"state": "unknown command (0x900620)", "entity_id": "switch.door_opening_2"}
     action:
-      - service: notify.push
-        data:
-          message: "Dør åpnet seg"
+      - service: scene.turn_on
+        entity_id: scene.dempet_lys
 
   - alias: Door closing
     trigger:
