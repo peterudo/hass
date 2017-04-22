@@ -8,11 +8,10 @@ default_view:
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
     - media_player.audio_1
-    - group.all_switches
+    - group.switches
 
 switches:
   name: Brytere
-  view: yes
   entities:
     - group.all_switches
 
