@@ -9,6 +9,18 @@ default_view:
     - media_player.stuecast
     - media_player.audio_1
 
+switches:
+  name: Brytere
+  view: yes
+  entities:
+    - group.all_switches
+
+downstairs:
+  name: Underetasje
+  view: yes
+  entities:
+    - sensor.utgangsdor
+
 livingroom:
   name: Stue
   entities:
@@ -38,13 +50,3 @@ outside:
     - sensor.yr_temperature
     - sensor.pws_temp_c
 
-downstairs:
-  name: Underetasje
-  entities:
-    - sensor.utgangsdor
-
-switches:
-  name: Brytere
-  view: yes
-  entities:
-    - group.all_switches
