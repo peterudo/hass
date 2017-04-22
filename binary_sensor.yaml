@@ -1,5 +1,7 @@
 - platform: template
   sensors:
-    sun_up:
-      value_template: '{{ states.sun.sun.attributes.elevation > 0}}'
-      friendly_name: 'Sun is up'
+    door:
+      friendly_name: "Ytterdør"
+      value_template: "{{ states.input_boolean.door.state == 'on' }}"
+      sensor_class: opening
+      entity_id: input_boolean.door

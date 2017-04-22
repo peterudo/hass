@@ -1,3 +1,27 @@
+- alias: "door on"
+  trigger:
+   - platform: state
+     entity_id: switch.door_closing_1
+     to: 'unknown command (0x9da790)'
+   - platform: state
+     entity_id: switch.door_closing_2
+     to: 'unknown command (0x900620)'
+  action:
+   - service: homeassistant.turn_on
+     entity_id: input_boolean.door
+
+- alias: "door off"
+  trigger:
+   - platform: state
+     entity_id: switch.door_opening_1
+     to: 'unknown command (0x98e2b0)'
+   - platform: state
+     entity_id: switch.door_opening_2
+     to: 'unknown command (0x9bbd40)'
+  action:
+   - service: homeassistant.turn_off
+     entity_id: input_boolean.door
+
 - alias: Remote kraftig lys
   trigger:
     - platform: event
