@@ -117,7 +117,7 @@ switch:
       fire_event: True
 
 automation:
-  - alias: Use remote to enable scene
+  - alias: Remote kraftig lys
     trigger:
       - platform: event
         event_type: button_pressed
@@ -125,3 +125,12 @@ automation:
     action:
       - service: scene.turn_on
         entity_id: scene.kraftig_lys
+
+  - alias: Remote dempet lys
+    trigger:
+      - platform: event
+        event_type: button_pressed
+        event_data: {"state": "group off", "entity_id": "switch.nexa_remote"}
+    action:
+      - service: scene.turn_on
+        entity_id: scene.dempet_lys
