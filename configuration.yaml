@@ -122,12 +122,16 @@ switch:
       fire_event: True
     091300039da790017770:
       name: Door closing 1
+      fire_event: True
     09130006900620017770:
       name: Door closing 2
+      fire_event: True
     0913000098e2b0017a70:
       name: Door opening 1
+      fire_event: True
     091300049bbd40017770:
       name: Door opening 2
+      fire_event: True
 
 automation:
   - alias: Remote kraftig lys
