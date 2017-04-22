@@ -83,6 +83,11 @@ tts:
 
 group: !include groups.yaml
 
+notify:
+  - name: push
+    platform: pushbullet
+    api_key: !secret pb_apikey
+
 zwave:
   usb_path: /dev/ttyACM0
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
