@@ -7,7 +7,7 @@ default_view:
     - group.masterbedroom
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
-    - media_player.audio1
+    - media_player.audio_1
 
 livingroom:
   name: Stue
