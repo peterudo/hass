@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+    sun_up:
+      value_template: '{{ states.sun.sun.attributes.elevation > 0}}'
+      friendly_name: 'Sun is up'

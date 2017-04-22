@@ -76,6 +76,8 @@ logbook:
 sun:
 
 sensor: !include_dir_list sensors/
+binary_sensor: !include binary_sensor.yaml
+input_boolean: !include input_boolean.yaml
 
 # Text to speech
 tts:
@@ -97,83 +99,5 @@ rfxtrx:
   device: /dev/ttyUSB1
   debug: True
 
-switch:
-  platform: rfxtrx
-  automatic_add: True
-  signal_repetitions: 2
-  devices:
-    0710010f4f080750:
-      name: Bryter 1
-      fire_event: True
-    071001014e080760:
-      name: Bryter 2
-      fire_event: True
-    071001204c080750:
-      name: Bryter 3
-      fire_event: True
-    0710010248080740:
-      name: Remote btn 4A
-      fire_event: True
-    07100a0041010000:
-      name: RA1
-      fire_event: True
-    0b11000b016bda9a01010f60:
-      name: Nexa remote
-      fire_event: True
-    091300039da790017770:
-      name: Door closing 1
-      fire_event: True
-    09130006900620017770:
-      name: Door closing 2
-      fire_event: True
-    0913000098e2b0017a70:
-      name: Door opening 1
-      fire_event: True
-    091300049bbd40017770:
-      name: Door opening 2
-      fire_event: True
-
-automation:
-  - alias: Remote kraftig lys
-    trigger:
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "group on", "entity_id": "switch.nexa_remote"}
-    action:
-      - service: scene.turn_on
-        entity_id: scene.kraftig_lys
-
-  - alias: Remote dempet lys
-    trigger:
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "group off", "entity_id": "switch.nexa_remote"}
-    action:
-      - service: scene.turn_on
-        entity_id: scene.dempet_lys
-
-  - alias: Door closing
-    trigger:
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "unknown command (0x9da790)", "entity_id": "switch.door_closing_1"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "unknown command (0x900620)", "entity_id": "switch.door_closing_2"}
-    action:
-      - service: notify.push
-        data:
-          message: "Utgangsdør lukket seg"
-
-  - alias: Door opening
-    trigger:
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "unknown command (0x98e2b0)", "entity_id": "switch.door_opening_1"}
-      - platform: event
-        event_type: button_pressed
-        event_data: {"state": "unknown command (0x9bbd40)", "entity_id": "switch.door_opening_2"}
-    action:
-      - service: notify.push
-        data:
-          message: "Utgangsdør åpnet seg"
+switch: !include switches.yaml
+automation: !include automation.yaml

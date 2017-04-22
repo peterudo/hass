@@ -1,0 +1,43 @@
+- alias: Remote kraftig lys
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"state": "group on", "entity_id": "switch.nexa_remote"}
+  action:
+    - service: scene.turn_on
+      entity_id: scene.kraftig_lys
+
+- alias: Remote dempet lys
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"state": "group off", "entity_id": "switch.nexa_remote"}
+  action:
+    - service: scene.turn_on
+      entity_id: scene.dempet_lys
+
+- alias: Door closing
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"state": "unknown command (0x9da790)", "entity_id": "switch.door_closing_1"}
+    - platform: event
+      event_type: button_pressed
+      event_data: {"state": "unknown command (0x900620)", "entity_id": "switch.door_closing_2"}
+  action:
+    - service: notify.push
+      data:
+        message: "Utgangsdør lukket seg"
+
+- alias: Door opening
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"state": "unknown command (0x98e2b0)", "entity_id": "switch.door_opening_1"}
+    - platform: event
+      event_type: button_pressed
+      event_data: {"state": "unknown command (0x9bbd40)", "entity_id": "switch.door_opening_2"}
+  action:
+    - service: notify.push
+      data:
+        message: "Utgangsdør åpnet seg"
