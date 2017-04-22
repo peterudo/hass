@@ -5,7 +5,6 @@ default_view:
     - group.livingroom
     - group.outside
     - group.masterbedroom
-    - binary_sensor.door
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
     - media_player.audio_1
@@ -17,9 +16,8 @@ switches:
 
 downstairs:
   name: Underetasje
-  view: yes
   entities:
-    - sensor.utgangsdor
+    - binary_sensor.door
 
 livingroom:
   name: Stue

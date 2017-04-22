@@ -25,7 +25,7 @@
       event_type: button_pressed
       event_data: {"state": "unknown command (0x900620)", "entity_id": "switch.door_closing_2"}
   action:
-   - service: homeassistant.turn_on
+   - service: homeassistant.turn_off
      entity_id: input_boolean.door
 
 - alias: Door opening
@@ -37,5 +37,5 @@
       event_type: button_pressed
       event_data: {"state": "unknown command (0x9bbd40)", "entity_id": "switch.door_opening_2"}
   action:
-   - service: homeassistant.turn_off
+   - service: homeassistant.turn_on
      entity_id: input_boolean.door
