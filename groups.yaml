@@ -24,7 +24,6 @@ livingroom:
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
-    - switch.ra1
 
 masterbedroom:
   name: Soverom
