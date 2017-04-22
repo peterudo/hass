@@ -120,6 +120,14 @@ switch:
     0b11000b016bda9a01010f60:
       name: Nexa remote
       fire_event: True
+    091300039da790017770:
+      name: Door opening 1
+    09130006900620017770:
+      name: Door opening 2
+    0913000098e2b0017a70:
+      name: Door closing 1
+    091300049bbd40017770:
+      name: Door closing 2
 
 automation:
   - alias: Remote kraftig lys
@@ -139,3 +147,29 @@ automation:
     action:
       - service: scene.turn_on
         entity_id: scene.dempet_lys
+
+  - alias: Door opening
+    trigger:
+      - platform: event
+        event_type: button_pressed
+        event_data: {"state": "Unknown command (0x9da790)", "entity_id": "switch.door_opening_1"}
+      - platform: event
+        event_type: button_pressed
+        event_data: {"state": "Unknown command (0x900620)", "entity_id": "switch.door_opening_2"}
+    action:
+      - service: notify.push
+        data:
+          message: "Dør åpnet seg"
+
+  - alias: Door closing
+    trigger:
+      - platform: event
+        event_type: button_pressed
+        event_data: {"state": "Unknown command (0x98e2b0)", "entity_id": "switch.door_closing_1"}
+      - platform: event
+        event_type: button_pressed
+        event_data: {"state": "Unknown command (0x9bbd40)", "entity_id": "switch.door_closing_2"}
+    action:
+      - service: notify.push
+        data:
+          message: "Dør lukket seg"
