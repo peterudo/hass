@@ -5,10 +5,10 @@ default_view:
     - group.livingroom
     - group.outside
     - group.masterbedroom
+    - group.switches
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
     - media_player.audio_1
-    - group.switches
 
 switches:
   name: Brytere

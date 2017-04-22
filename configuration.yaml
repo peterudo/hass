@@ -86,10 +86,11 @@ group: !include groups.yaml
 zwave:
   usb_path: /dev/ttyACM0
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
-  debug: true
+  debug: True
 
 rfxtrx:
   device: /dev/ttyUSB1
+  debug: True
 
 switch:
   platform: rfxtrx
@@ -111,7 +112,7 @@ switch:
     07100a0041010000:
       name: RA1
       fire_event: True
-    0b11006f016bda9a01010f60:
+    0b11000b016bda9a01010f60:
       name: Nexa remote
       fire_event: True
 
@@ -120,7 +121,7 @@ automation:
     trigger:
       - platform: event
         event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.nexa_remote"}
+        event_data: {"state": "group on", "entity_id": "switch.nexa_remote"}
     action:
       service: scene.turn_on
       entity_id: scene.kraftig_lys
