@@ -113,6 +113,7 @@ switch:
       fire_event: True
     0b11006f016bda9a01010f60:
       name: Nexa remote
+      fire_event: True
 
 automation:
   - alias: Use remote to enable scene
