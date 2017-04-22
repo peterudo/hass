@@ -152,10 +152,10 @@ automation:
     trigger:
       - platform: event
         event_type: button_pressed
-        event_data: {"state": "Unknown command (0x9da790)", "entity_id": "switch.door_opening_1"}
+        event_data: {"state": "unknown command (0x9da790)", "entity_id": "switch.door_opening_1"}
       - platform: event
         event_type: button_pressed
-        event_data: {"state": "Unknown command (0x900620)", "entity_id": "switch.door_opening_2"}
+        event_data: {"state": "unknown command (0x900620)", "entity_id": "switch.door_opening_2"}
     action:
       - service: notify.push
         data:
@@ -165,10 +165,10 @@ automation:
     trigger:
       - platform: event
         event_type: button_pressed
-        event_data: {"state": "Unknown command (0x98e2b0)", "entity_id": "switch.door_closing_1"}
+        event_data: {"state": "unknown command (0x98e2b0)", "entity_id": "switch.door_closing_1"}
       - platform: event
         event_type: button_pressed
-        event_data: {"state": "Unknown command (0x9bbd40)", "entity_id": "switch.door_closing_2"}
+        event_data: {"state": "unknown command (0x9bbd40)", "entity_id": "switch.door_closing_2"}
     action:
       - service: notify.push
         data:
