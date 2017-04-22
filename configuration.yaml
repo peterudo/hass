@@ -111,13 +111,15 @@ switch:
     07100a0041010000:
       name: RA1
       fire_event: True
+    0b11006f016bda9a01010f60:
+      name: Nexa remote
 
 automation:
   - alias: Use remote to enable scene
     trigger:
       - platform: event
         event_type: button_pressed
-        event_data: {"state": "on", "entity_id": "switch.remote_btn_4a"}
+        event_data: {"state": "on", "entity_id": "switch.nexa_remote"}
     action:
       service: scene.turn_on
       entity_id: scene.kraftig_lys

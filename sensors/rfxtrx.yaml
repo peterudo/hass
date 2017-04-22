@@ -3,3 +3,5 @@ automatic_add: True
 devices:
   085007058700001559:
     name: Basseng
+  09130001900620017770:
+    name: Utgangsdør
