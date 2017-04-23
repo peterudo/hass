@@ -7,11 +7,10 @@ homeassistant:
   time_zone: Europe/Oslo
   customize: !include customize.yaml
 
-# Enables the frontend
-frontend:
 
-# Enables configuration UI
+frontend:
 config:
+ios:
 
 http:
   # Uncomment this to add a password (recommended!)
