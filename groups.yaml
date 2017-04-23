@@ -9,6 +9,7 @@ default_view:
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
     - media_player.audio_1
+    - group.tracker
 
 livingroom:
   name: Stue
@@ -43,3 +44,5 @@ outside:
     - sensor.yr_temperature
     - sensor.pws_temp_c
 
+tracker:
+  - device_tracker.nilia

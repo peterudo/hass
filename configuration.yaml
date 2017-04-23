@@ -77,6 +77,7 @@ sun:
 sensor: !include_dir_list sensors/
 binary_sensor: !include binary_sensor.yaml
 input_boolean: !include input_boolean.yaml
+device_tracker: !include device_tracker.yaml
 
 # Text to speech
 tts:
