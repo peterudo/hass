@@ -3,5 +3,5 @@
     door_bad:
       friendly_name: "Badedør oppe"
       value_template: "{{ states.input_boolean.door_bad.state == 'on' }}"
-      sensor_class: opening
+      device_class: opening
       entity_id: input_boolean.door_bad
