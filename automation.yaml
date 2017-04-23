@@ -40,10 +40,29 @@
    - service: homeassistant.turn_on
      entity_id: input_boolean.door_bad
 
-- alias: 'Turn off lights at night'
+- alias: Turn off lights at night
   trigger:
     - platform: time
       after: '23:40:00'
   action:
     service: scene.turn_on
     entity_id: scene.natt
+
+
+- alias: Turn on lights before sunset
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: '-01:00:00'
+  action:
+    service: scene.turn_on
+    entity_id: scene.kraftig_lys
+
+- alias: Demp lys kveld
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: '+01:00:00'
+  action:
+    service: scene.turn_on
+    entity_id: scene.dempet_lys
