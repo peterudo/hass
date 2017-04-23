@@ -104,6 +104,6 @@ rfxtrx:
 mqtt:
   broker: 192.168.0.218
   port: 1883
-  client-id: hass
+  client_id: hass
   username: rudolfsen
   password: !secret mqtt_password
