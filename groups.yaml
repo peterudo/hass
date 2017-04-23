@@ -5,16 +5,10 @@ default_view:
     - group.livingroom
     - group.outside
     - group.masterbedroom
-    - group.downstairs
+    - group.bad
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
     - media_player.audio_1
-
-downstairs:
-  name: Underetasje
-  control: hidden
-  entities:
-    - binary_sensor.door
 
 livingroom:
   name: Stue
@@ -29,6 +23,11 @@ masterbedroom:
   name: Soverom
   entities:
     - light.hue_ambiance_lamp_1
+
+bad:
+  name: Bad, oppe
+  entities:
+    - binary_sensor.door_bad
 
 livingroom_scene:
   name: Presets

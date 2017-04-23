@@ -1,7 +1,7 @@
 - platform: template
   sensors:
-    door:
-      friendly_name: "Ytterdør"
-      value_template: "{{ states.input_boolean.door.state == 'on' }}"
+    door_bad:
+      friendly_name: "Badedør oppe"
+      value_template: "{{ states.input_boolean.door_bad.state == 'on' }}"
       sensor_class: opening
-      entity_id: input_boolean.door
+      entity_id: input_boolean.door_bad

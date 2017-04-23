@@ -16,7 +16,7 @@
     - service: scene.turn_on
       entity_id: scene.dempet_lys
 
-- alias: Door closing
+- alias: Door bad closing
   trigger:
     - platform: event
       event_type: button_pressed
@@ -26,9 +26,9 @@
       event_data: {"state": "unknown command (0x900620)", "entity_id": "switch.door_closing_2"}
   action:
    - service: homeassistant.turn_off
-     entity_id: input_boolean.door
+     entity_id: input_boolean.door_bad
 
-- alias: Door opening
+- alias: Door bad opening
   trigger:
     - platform: event
       event_type: button_pressed
@@ -38,4 +38,4 @@
       event_data: {"state": "unknown command (0x9bbd40)", "entity_id": "switch.door_opening_2"}
   action:
    - service: homeassistant.turn_on
-     entity_id: input_boolean.door
+     entity_id: input_boolean.door_bad
