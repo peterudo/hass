@@ -1,0 +1,10 @@
+name: All off
+entities:
+  group.all_lights:
+    state: off
+  switch.bryter_1:
+    state: off
+  switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
+    state: off
+  light.fibaro_system_fgd212_dimmer_2_level_7_0:
+    state: off

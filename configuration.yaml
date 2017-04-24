@@ -17,53 +17,6 @@ http:
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
 
-scene:
-  - name: Natt
-    entities:
-      group.all_lights:
-        state: off
-      switch.bryter_1:
-        state: off
-      switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
-        state: off
-      light.fibaro_system_fgd212_dimmer_2_level_7_0:
-        state: off
-
-  - name: Dempet lys
-    entities:
-      switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
-        state: off
-      switch.bryter_1:
-        state: off
-      light.fibaro_system_fgd212_dimmer_2_level_6_0:
-        state: on
-        brightness: 40
-      light.fibaro_system_fgd212_dimmer_2_level_7_0:
-        state: on
-        brightness: 60
-      light.hue_ambiance_lamp_2:
-        brightness: 80
-        color_temp: 500
-        state: on
-
-  - name: Kraftig lys
-    entities:
-      switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
-        state: on
-      switch.bryter_1:
-        state: on
-      light.fibaro_system_fgd212_dimmer_2_level_6_0:
-        state: on
-        brightness: 100
-      light.fibaro_system_fgd212_dimmer_2_level_7_0:
-        state: on
-        brightness: 100
-      light.hue_ambiance_lamp_2:
-        brightness: 100
-        color_temp: 300
-        state: on
-
-# Checks for available updates
 updater:
 
 # Discover some devices automatically
@@ -86,6 +39,7 @@ automation: !include automation.yaml
 sensor: !include_dir_list sensors/
 binary_sensor: !include binary_sensor.yaml
 input_boolean: !include input_boolean.yaml
+scene: !include_dir_list scenes/
 #device_tracker: !include device_tracker.yaml
 
 # Text to speech
