@@ -3,19 +3,19 @@ sensor.basseng_temperature:
   icon: mdi:pool
 
 light.fibaro_system_fgd212_dimmer_2_level_6_0:
-  friendly_name: Lys, trappeoppgang
+  friendly_name: Trapp/gang oppe
 
 light.fibaro_system_fgd212_dimmer_2_level_7_0:
-  friendly_name: Stuelys
+  friendly_name: Downlights
 
 light.hue_ambiance_lamp_1:
-  friendly_name: Hue, soverom
+  friendly_name: Soverom
 
 light.hue_ambiance_lamp_2:
-  friendly_name: Hue, stue
+  friendly_name: Hjørne, ved stol
 
 switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
-  friendly_name: Lys ved TV
+  friendly_name: Ved TV
 
 switch.bryter_1:
   friendly_name: Lampe, kommode
@@ -28,5 +28,8 @@ sensor.pws_temp_c:
   friendly_name: WU
 
 binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0:
-  friendly_name: "Utgangsdør"
+  friendly_name: Utgangsdør
   device_class: opening
+
+scene.all_off:
+  friendly_name: Lys av
