@@ -46,7 +46,7 @@
       after: '23:40:00'
   action:
     service: scene.turn_on
-    entity_id: scene.natt
+    entity_id: scene.all_off
 
 
 - alias: Turn on lights before sunset

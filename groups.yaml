@@ -42,7 +42,7 @@ livingroom_scene:
   entities:
   - scene.dempet_lys
   - scene.kraftig_lys
-  - scene.natt
+  - scene.all_off
 
 outside:
   name: Ute
