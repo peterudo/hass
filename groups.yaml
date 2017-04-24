@@ -16,7 +16,7 @@ livingroom:
   entities:
     - group.livingroom_scene
     - light.fibaro_system_fgd212_dimmer_2_level_6_0
-    - light.fibaro_system_fgd212_dimmer_2_level_6_0_2
+    - light.fibaro_system_fgd212_dimmer_2_level_7_0
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0

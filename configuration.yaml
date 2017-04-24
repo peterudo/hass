@@ -36,6 +36,9 @@ scene:
       light.fibaro_system_fgd212_dimmer_2_level_6_0:
         state: on
         brightness: 40
+      light.fibaro_system_fgd212_dimmer_2_level_7_0:
+        state: on
+        brightness: 40
       light.hue_ambiance_lamp_2:
         brightness: 80
         color_temp: 500
@@ -48,6 +51,9 @@ scene:
       switch.bryter_1:
         state: on
       light.fibaro_system_fgd212_dimmer_2_level_6_0:
+        state: on
+        brightness: 100
+      light.fibaro_system_fgd212_dimmer_2_level_7_0:
         state: on
         brightness: 100
       light.hue_ambiance_lamp_2:
