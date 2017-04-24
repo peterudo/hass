@@ -5,6 +5,7 @@ default_view:
     - group.livingroom
     - group.outside
     - group.masterbedroom
+    - group.hall
     - group.bad
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
@@ -20,6 +21,11 @@ livingroom:
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
+
+hall:
+  name: Gang
+  entities:
+    - binary_sensor.__sensor_8_0
 
 masterbedroom:
   name: Soverom

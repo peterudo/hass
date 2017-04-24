@@ -26,3 +26,7 @@ sensor.yr_temperature:
 
 sensor.pws_temp_c:
   friendly_name: WU
+
+binary_sensor.__sensor_8_0:
+  friendly_name: "Utgangsdør"
+  device_class: opening
