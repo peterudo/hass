@@ -5,6 +5,9 @@ sensor.basseng_temperature:
 light.fibaro_system_fgd212_dimmer_2_level_6_0:
   friendly_name: Lys, trappeoppgang
 
+light.fibaro_system_fgd212_dimmer_2_level_6_0_2:
+  friendly_name: Stuelys
+
 light.hue_ambiance_lamp_1:
   friendly_name: Hue, soverom
 
