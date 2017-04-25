@@ -97,8 +97,8 @@
         source: Argon iNet2+ 002261edde0a
     - service: media_player.volume_set
       data:
-        entity_id: media_player.argon_inet2_002261edde0a
-        volume_level: 0.6
+        entity_id: media_player.spotify
+        volume_level: 0.4
     - service: media_player.play_media
       data:
         entity_id: media_player.spotify
