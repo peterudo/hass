@@ -82,7 +82,12 @@
       after: 07:30
   condition:
     - condition: time
-      weekday: [mon, tue, wed, thu, fri]
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
   action:
     - service: media_player.turn_on
       entity_id: media_player.argon_inet2_002261edde0a
@@ -92,7 +97,7 @@
         source: Argon iNet2+ 002261edde0a
     - service: media_player.volume_set
       data:
-        entity_id: media_player.argon_inet2_002261edde0ame
+        entity_id: media_player.argon_inet2_002261edde0a
         volume_level: 0.6
     - service: media_player.play_media
       data:
