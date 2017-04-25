@@ -10,6 +10,8 @@ default_view:
     - media_player.argon_inet2_002261edde0a
     - media_player.stuecast
     - media_player.audio_1
+    - device_tracker.samsunggalaxys7
+    - device_tracker.peters7
     - device_tracker.nilia
 
 system:
