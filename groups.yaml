@@ -12,6 +12,20 @@ default_view:
     - media_player.audio_1
     - device_tracker.nilia
 
+system:
+  view: yes
+  icon: mdi:server-network
+  entities:
+    - group.pi
+
+network:
+  name: Nettverk
+  icon: mdi:chart-pie
+  entities:
+    - sensor.external_ip
+    - sensor.disk_use_
+    - sensor.since_last_boot
+
 livingroom:
   name: Stue
   entities:

@@ -33,3 +33,6 @@ binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0:
 
 scene.all_off:
   friendly_name: Lys av
+
+sensor.external_ip:
+  friendly_name: IP-adresse
