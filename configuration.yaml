@@ -55,7 +55,7 @@ notify:
   - name: push
     platform: pushbullet
     api_key: !secret pb_apikey
-  - name: html5-push
+  - name: html5
     platform: html5
     gcm_api_key: !secret gcm_api_key
     gcm_sender_id: !secret gcm_sender_id
@@ -73,6 +73,10 @@ media_player:
   - platform: spotify
     client_id: !secret spotify_client_id
     client_secret: !secret spotify_client_secret
+  - platform: panasonic_viera
+    name: Peisestue TV
+    host: 192.168.0.121
+    mac: A8:13:74:4B:67:D4
 
 #mqtt:
 #  broker: 192.168.0.218
