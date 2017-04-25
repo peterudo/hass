@@ -37,7 +37,7 @@ scene.all_off:
 sensor.external_ip:
   friendly_name: IP-adresse
 
-device_tracker.samsunggalaxys7:
+device_tracker.hildes7:
   friendly_name: Hilde
 
 device_tracker.peters7:
