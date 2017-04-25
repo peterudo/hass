@@ -80,6 +80,9 @@
   trigger:
     - platform: time
       after: 07:30
+  condition:
+    - condition:
+      weekday: [mon, tue, wed, thu, fri]
   action:
     - service: media_player.turn_on
       entity_id: media_player.argon_inet2_002261edde0a
@@ -89,7 +92,7 @@
         source: Argon iNet2+ 002261edde0a
     - service: media_player.volume_set
       data:
-        entity_id: media_player.spotify
+        entity_id: media_player.argon_inet2_002261edde0ame
         volume_level: 0.6
     - service: media_player.play_media
       data:
