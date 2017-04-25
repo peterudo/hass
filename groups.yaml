@@ -8,6 +8,7 @@ default_view:
     - group.hall
     - group.bad
     - media_player.argon_inet2_002261edde0a
+    - media_player.spotify
     - media_player.stuecast
     - media_player.audio_1
     - device_tracker.hildes7
