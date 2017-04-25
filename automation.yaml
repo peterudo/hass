@@ -81,7 +81,7 @@
     - platform: time
       after: 07:30
   condition:
-    - condition:
+    - condition: time
       weekday: [mon, tue, wed, thu, fri]
   action:
     - service: media_player.turn_on
