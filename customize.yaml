@@ -42,3 +42,6 @@ device_tracker.hildes7:
 
 device_tracker.peters7:
   friendly_name: Peter
+
+device_tracker.nilia:
+  friendly_name: Nilia
