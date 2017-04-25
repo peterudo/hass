@@ -83,7 +83,7 @@
   action:
     - service: media_player.select_source
       entity_id: media_player.spotify
-      source: Argon iNet2+ 002261edde0a
+      select_source: Argon iNet2+ 002261edde0a
     - service: media_player.volume_set
       entity_id: media_player.spotify
       volume_level: 0.6
