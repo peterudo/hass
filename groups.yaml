@@ -16,7 +16,7 @@ system:
   view: yes
   icon: mdi:server-network
   entities:
-    - group.pi
+    - group.network
 
 network:
   name: Nettverk
