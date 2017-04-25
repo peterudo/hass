@@ -55,6 +55,10 @@ notify:
   - name: push
     platform: pushbullet
     api_key: !secret pb_apikey
+  - name: html5-push
+    platform: html5
+    gcm_api_key: !secret gcm_api_key
+    gcm_sender_id: !secret gcm_sender_id
 
 zwave:
   usb_path: /dev/ttyACM0
