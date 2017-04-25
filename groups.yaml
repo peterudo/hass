@@ -13,7 +13,7 @@ default_view:
     - media_player.audio_1
     - device_tracker.hildes7
     - device_tracker.peters7
-    - device_tracker.nilia
+    - device_tracker.niliasiphone
 
 system:
   view: yes
@@ -78,4 +78,4 @@ outside:
 tracker:
   - device_tracker.hildes7
   - device_tracker.peters7
-  - device_tracker.nilia
+  - device_tracker.niliasiphone
