@@ -21,6 +21,9 @@ switch.bryter_1:
   friendly_name: Lampe, kommode
   assumed_state: false
 
+switch.fibaro_system_fgs212_switch_3kw_switch_9_0:
+  friendly_name: Garasjeport
+
 sensor.yr_temperature:
   friendly_name: Yr
 
