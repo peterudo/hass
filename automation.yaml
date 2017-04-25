@@ -48,7 +48,6 @@
     service: scene.turn_on
     entity_id: scene.all_off
 
-
 - alias: Turn on lights before sunset
   trigger:
     - platform: sun
@@ -66,3 +65,13 @@
   action:
     service: scene.turn_on
     entity_id: scene.dempet_lys
+
+- alias: Alle borte
+  trigger:
+    - platform: state
+      entity_id: group.tracker
+      from: 'home'
+      to: 'not_home'
+  action:
+    service: scene.turn_on
+    entity_id: scene.all_off
