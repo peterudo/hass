@@ -95,12 +95,12 @@
       data:
         entity_id: media_player.spotify
         source: Argon iNet2+ 002261edde0a
-    - service: media_player.volume_set
-      data:
-        entity_id: media_player.spotify
-        volume_level: 0.4
     - service: media_player.play_media
       data:
         entity_id: media_player.spotify
         media_content_type: playlist
         media_content_id: spotify:user:spotify:playlist:37i9dQZF1DX1j96SzHv3js
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.spotify
+        volume_level: 0.4
