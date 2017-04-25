@@ -11,6 +11,7 @@ default_view:
     - media_player.spotify
     - media_player.stuecast
     - media_player.audio_1
+    - media_player.peisestue_tv
     - device_tracker.hildes7
     - device_tracker.peters7
     - device_tracker.niliasiphone
