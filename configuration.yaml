@@ -7,15 +7,13 @@ homeassistant:
   time_zone: Europe/Oslo
   customize: !include customize.yaml
 
-
 frontend:
 config:
 ios:
 
 http:
   api_password: !secret http_password
-  # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
+  base_url: !secret http_base_url
 
 updater:
 
