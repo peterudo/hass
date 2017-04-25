@@ -71,3 +71,8 @@ outside:
     - sensor.pws_temp_c
     - sensor.pws_feelslike_c
     - sensor.basseng_temperature
+
+tracker:
+  - device_tracker.hildes7
+  - device_tracker.peters7
+  - device_tracker.nilia
