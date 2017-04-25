@@ -62,6 +62,11 @@ rfxtrx:
   device: /dev/ttyUSB1
   debug: True
 
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
+
 #mqtt:
 #  broker: 192.168.0.218
 #  port: 1883
