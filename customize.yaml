@@ -52,3 +52,6 @@ device_tracker.peters7:
 
 device_tracker.niliasiphone:
   friendly_name: Nilia
+
+climate.remotec_zxt120eu_heating_1_10_1:
+  friendly_name: Varmepumpe

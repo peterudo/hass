@@ -43,7 +43,7 @@ livingroom:
 hall:
   name: Gang
   entities:
-    - binary_sensor.__sensor_8_0 # this is the same as below. dont know why it disappeared
+    - climate.remotec_zxt120eu_heating_1_10_1
     - binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0
 
 masterbedroom:
