@@ -104,3 +104,23 @@
       data:
         entity_id: media_player.spotify
         volume_level: 0.4
+
+- alias: Nilia hjemme fra skolen
+  trigger:
+    - platform: state
+      entity_id: device_tracker.niliasiphone
+      to: home
+  condition:
+    - condition: time
+      after: 13:00
+      before: 15:00
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: notify.html5
+      data:
+        title: Nilia er hjemme
