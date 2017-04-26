@@ -112,8 +112,8 @@
       to: home
   condition:
     - condition: time
-      after: 13:00
-      before: 15:00
+      after: '13:00:00'
+      before: '15:00:00'
       weekday:
         - mon
         - tue
