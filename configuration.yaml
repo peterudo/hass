@@ -37,6 +37,9 @@ logbook:
 # Track the sun
 sun:
 
+climate:
+  platform: zwave
+
 switch: !include switches.yaml
 automation: !include automation.yaml
 sensor: !include_dir_list sensors/
