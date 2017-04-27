@@ -28,11 +28,10 @@ sensor.yr_temperature:
   friendly_name: Yr
 
 sensor.pws_temp_c:
-  friendly_name: WU
+  friendly_name: Ute
 
-binary_sensor.__sensor_8_0:
-  friendly_name: Utgangsdør
-  device_class: opening
+sensor.pws_feelslike_c:
+  friendly_name: Følt temp ute
 
 binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0:
   friendly_name: Utgangsdør
