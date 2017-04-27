@@ -61,6 +61,9 @@ sensor.remotec_zxt120eu_temperature_11_1:
 sensor.bad_oppe_temperature:
   friendly_name: Bad, oppe
 
+sensor.bad_nede_temperature:
+  friendly_name: Bad, nede
+
 sensor.stua_temperature:
   friendly_name: Stua
 
