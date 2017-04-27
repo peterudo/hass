@@ -3,3 +3,11 @@ automatic_add: True
 devices:
   085007058700001559:
     name: Basseng
+  08500700c30000f579:
+    name: Bad_oppe
+  08500702d40000d379:
+    name: Stua
+  08500703e70000e779:
+    name: Lucas
+  08500701fe0000d459:
+    name: Spisestua
