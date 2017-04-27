@@ -58,3 +58,15 @@ climate.remotec_zxt120eu_heating_1_11_1:
 
 sensor.remotec_zxt120eu_temperature_11_1:
   friendly_name: Gang
+
+sensor.08500700c30000dc79_temperature:
+  friendly_name: Bad, oppe
+
+sensor.08500702d40000c789_temperature:
+  friendly_name: Stua
+
+sensor.08500737fe0000c179_temperature:
+  friendly_name: Spisestua
+
+sensor.0850074fe70000cd79_temperature:
+  friendly_name: Lucas

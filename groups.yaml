@@ -16,6 +16,19 @@ default_view:
     - device_tracker.peters7
     - device_tracker.niliasiphone
 
+temperature:
+  view: yes
+  icon: mdi:temperature-celsius
+  entities:
+    - sensor.remotec_zxt120eu_temperature_11_1
+    - sensor.08500700c30000dc79_temperature
+    - sensor.08500702d40000c789_temperature
+    - sensor.08500737fe0000c179_temperature
+    - sensor.0850074fe70000cd79_temperature
+    - sensor.basseng_temperature
+    - sensor.pws_temp_c
+    - sensor.pws_feelslike_c
+
 system:
   view: yes
   icon: mdi:server-network
