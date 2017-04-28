@@ -76,8 +76,12 @@ media_player:
   - platform: spotify
     client_id: !secret spotify_client_id
     client_secret: !secret spotify_client_secret
+  - platform: samsungtv
+    name: TV, stue
+    host: 192.168.0.148
+    mac: 78:AB:BB:D4:F1:EF
   - platform: panasonic_viera
-    name: Peisestue TV
+    name: TV, peisestue
     host: 192.168.0.121
     mac: A8:13:74:4B:67:D4
 
