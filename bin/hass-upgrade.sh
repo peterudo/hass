@@ -1,4 +1,4 @@
-cd /home/hass/.homeassistant
+cd /home/homeassistant/.homeassistant
 source /srv/hass/hass_venv/bin/activate
 
 echo "Processing update"
