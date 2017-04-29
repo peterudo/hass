@@ -123,8 +123,6 @@ automations:
     - automation.demp_lys_kveld
     - automation.good_morning
     - automation.nilia_hjemme_fra_skolen
-    - automation.remote_dempet_lys
-    - automation.remote_kraftig_lys
     - automation.turn_off_lights_at_night
     - automation.turn_on_lights_before_sunset
 
