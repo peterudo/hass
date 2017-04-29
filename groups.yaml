@@ -3,19 +3,36 @@ default_view:
   icon: mdi:home
   entities:
     - group.livingroom
-    - group.outside
     - group.masterbedroom
     - group.hall
     - group.bad
+    - group.garage
+    - group.weather
+    - device_tracker.hildes7
+    - device_tracker.peters7
+    - device_tracker.niliasiphone
+
+media:
+  view: yes
+  entities:
     - media_player.argon_inet2_002261edde0a
     - media_player.spotify
     - media_player.stuecast
     - media_player.audio_1
     - media_player.tv_peisestue
     - media_player.tv_stue
-    - device_tracker.hildes7
-    - device_tracker.peters7
-    - device_tracker.niliasiphone
+
+pool_view:
+  view: yes
+  icon: mdi:pool
+  entities:
+    - group.pool
+
+pool:
+  name: Basseng
+  entities:
+    - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
+    - sensor.basseng_temperature
 
 temperature_view:
   view: yes
@@ -33,8 +50,6 @@ temperature:
     - sensor.spisestua_temperature
     - sensor.lucas_temperature
     - sensor.basseng_temperature
-    - sensor.pws_temp_c
-    - sensor.pws_feelslike_c
 
 system:
   view: yes
@@ -58,7 +73,7 @@ livingroom:
     - light.fibaro_system_fgd212_dimmer_2_level_7_0
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
-    - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
+    - switch.bryter_3
 
 hall:
   name: Gang
@@ -83,10 +98,14 @@ livingroom_scene:
   - scene.kraftig_lys
   - scene.all_off
 
-outside:
-  name: Ute
+garage:
+  name: Garasje
   entities:
     - switch.fibaro_system_fgs212_switch_3kw_switch_9_0
+
+weather:
+  name: Vær
+  entities:
     - sun.sun
     - sensor.yr_symbol
     - sensor.yr_condition
@@ -94,7 +113,6 @@ outside:
     - sensor.pws_weather
     - sensor.pws_temp_c
     - sensor.pws_feelslike_c
-    - sensor.basseng_temperature
 
 tracker:
   - device_tracker.hildes7

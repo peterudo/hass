@@ -15,10 +15,14 @@ light.hue_ambiance_lamp_2:
   friendly_name: Hjørne, ved stol
 
 switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
-  friendly_name: Ved TV
+  friendly_name: Rensepumpe
 
 switch.bryter_1:
   friendly_name: Lampe, kommode
+  assumed_state: false
+
+switch.bryter_3:
+  friendly_name: Lampe ved TV
   assumed_state: false
 
 switch.fibaro_system_fgs212_switch_3kw_switch_9_0:
