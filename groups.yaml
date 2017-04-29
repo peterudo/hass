@@ -8,6 +8,7 @@ default_view:
     - group.bad
     - group.garage
     - group.weather
+    - group.automations
     - device_tracker.hildes7
     - device_tracker.peters7
     - device_tracker.niliasiphone
@@ -114,6 +115,18 @@ weather:
     - sensor.pws_weather
     - sensor.pws_temp_c
     - sensor.pws_feelslike_c
+
+automations:
+  name: Automations
+  entities:
+    - automation.alle_borte
+    - automation.demp_lys_kveld
+    - automation.good_morning
+    - automation.nilia_hjemme_fra_skolen
+    - automation.remote_dempet_lys
+    - automation.remote_kraftig_lys
+    - automation.turn_off_lights_at_night
+    - automation.turn_on_lights_before_sunset
 
 tracker:
   - device_tracker.hildes7

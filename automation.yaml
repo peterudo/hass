@@ -121,6 +121,6 @@
         - thu
         - fri
   action:
-    - service: notify.html5
+    - service: notify.push
       data:
         title: Nilia er hjemme
