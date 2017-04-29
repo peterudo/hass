@@ -18,7 +18,7 @@ switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
   friendly_name: Rensepumpe
 
 sensor.fibaro_system_fgwpef_wall_plug_gen5_power_4_4:
-  friendly_name: Effekt
+  friendly_name: Effekt, rensepumpe
 
 switch.bryter_1:
   friendly_name: Lampe, kommode
