@@ -81,6 +81,7 @@ hall:
   name: Gang
   entities:
     - climate.remotec_zxt120eu_heating_1_11_1
+    - climate.remotec_zxt120eu_cooling_1_11_2
     - binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0
 
 masterbedroom:
