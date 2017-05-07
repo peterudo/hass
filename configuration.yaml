@@ -65,12 +65,11 @@ notify:
 
 zwave:
   usb_path: /dev/ttyACM0
-  config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
-  debug: True
+  debug: False
 
 rfxtrx:
   device: /dev/ttyUSB1
-  debug: True
+  debug: False
 
 media_player:
   - platform: spotify
