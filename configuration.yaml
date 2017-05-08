@@ -84,9 +84,9 @@ media_player:
     host: 192.168.0.121
     mac: A8:13:74:4B:67:D4
 
-#mqtt:
-#  broker: 192.168.0.218
-#  port: 1883
-#  client_id: hass
-#  username: rudolfsen
-#  password: !secret mqtt_password
+mqtt:
+  broker: 192.168.0.218
+  port: 1883
+  client_id: hass
+  username: rudolfsen
+  password: !secret mqtt_password
