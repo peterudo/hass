@@ -123,4 +123,5 @@
   action:
     - service: notify.push
       data:
-        title: Nilia er hjemme
+        title: Nilia
+        message: Er hjemme
