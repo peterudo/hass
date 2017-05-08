@@ -94,6 +94,12 @@ bad:
   entities:
     - binary_sensor.door_bad
 
+office:
+  name: Kontor
+  view: yes
+  entities:
+    - group.sensornode1_card
+
 livingroom_scene:
   name: Presets
   entities:
