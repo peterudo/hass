@@ -131,3 +131,10 @@ tracker:
   - device_tracker.hildes7
   - device_tracker.peters7
   - device_tracker.niliasiphone
+
+sensornode1_card:
+  name: Sensor 1
+  entities:
+    - sensor.sn1_temperature
+    - sensor.sn1_humidity
+    - sensor.sn1_ldr
