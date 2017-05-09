@@ -8,6 +8,7 @@ default_view:
     - group.bad
     - group.garage
     - group.weather
+    - group.vaskerom
     - group.automations
     - device_tracker.hildes7
     - device_tracker.peters7
@@ -80,6 +81,7 @@ livingroom:
 hall:
   name: Gang
   entities:
+    - light.fibaro_system_fgd212_dimmer_2_level_13_0
     - climate.remotec_zxt120eu_heating_1_11_1
     - climate.remotec_zxt120eu_cooling_1_11_2
     - binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0
@@ -122,6 +124,12 @@ weather:
     - sensor.pws_weather
     - sensor.pws_temp_c
     - sensor.pws_feelslike_c
+
+vaskerom:
+  name: Vaskerom
+  entities:
+    - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_12_0
+    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_0
 
 automations:
   name: Automations
