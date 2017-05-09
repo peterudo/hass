@@ -26,7 +26,7 @@ sensor.fibaro_system_fgwpef_wall_plug_gen5_power_4_4:
 switch.fibaro_system_fgwpef_wall_plug_gen5_switch_12_0:
   friendly_name: Vaskemaskin
 
-sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_0:
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_4:
   friendly_name: Effekt, Vaskemaskin
 
 switch.bryter_1:

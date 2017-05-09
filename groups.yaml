@@ -129,7 +129,7 @@ vaskerom:
   name: Vaskerom
   entities:
     - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_12_0
-    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_0
+    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_4
 
 automations:
   name: Automations
