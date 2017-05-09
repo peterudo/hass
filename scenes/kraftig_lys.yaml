@@ -1,6 +1,6 @@
 name: Kraftig lys
 entities:
-  switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
+  switch.bryter_3:
     state: on
   switch.bryter_1:
     state: on
