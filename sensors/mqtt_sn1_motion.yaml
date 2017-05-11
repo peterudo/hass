@@ -1,0 +1,7 @@
+platform: mqtt
+state_topic: "hass/sensornode1"
+name: "SN1 Motion"
+device_class: "motion"
+payload_on: "motion detected"
+payload_off: "standby"
+value_template: '{{ value_json.motion }}'
