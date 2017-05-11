@@ -135,13 +135,17 @@
     service: homeassistant.turn_on
     entity_id: light.fibaro_system_fgd212_dimmer_2_level_13_0
 
-- alias: Turn off hall light 1 minute after last movement
+- alias: Turn off hall light after last movement
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
     state: 'standby'
     for:
-      minutes: 1
+      minutes: 5
+  condition:
+    - condition: time
+      after: '00:00:00'
+      before: '06:00:00'
   action:
     service: homeassistant.turn_off
     entity_id: light.fibaro_system_fgd212_dimmer_2_level_13_0
