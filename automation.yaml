@@ -141,7 +141,7 @@
     entity_id: sensor.sn1_motion
     state: 'standby'
     for:
-      minutes: 10
+      minutes: 1
   action:
     service: homeassistant.turn_off
     entity_id: light.fibaro_system_fgd212_dimmer_2_level_13_0
