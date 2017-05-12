@@ -141,11 +141,7 @@
     entity_id: sensor.sn1_motion
     state: 'standby'
     for:
-      minutes: 5
-  condition:
-    - condition: time
-      after: '00:00:00'
-      before: '06:00:00'
+      seconds: 30
   action:
     service: homeassistant.turn_off
     entity_id: light.taklys_gang_level_13_0
