@@ -133,7 +133,7 @@
     state: 'motion detected'
   action:
     service: homeassistant.turn_on
-    entity_id: light.fibaro_system_fgd212_dimmer_2_level_13_0
+    entity_id: light.taklys_gang_level_13_0
 
 - alias: Turn off hall light after last movement
   trigger:
@@ -148,4 +148,4 @@
       before: '06:00:00'
   action:
     service: homeassistant.turn_off
-    entity_id: light.fibaro_system_fgd212_dimmer_2_level_13_0
+    entity_id: light.taklys_gang_level_13_0
