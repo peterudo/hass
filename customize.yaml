@@ -2,13 +2,13 @@ sensor.basseng_temperature:
   friendly_name: Basseng
   icon: mdi:pool
 
-light.fibaro_system_fgd212_dimmer_2_level_6_0:
+light.trappeoppgang_level_6_0:
   friendly_name: Trapp/gang oppe
 
-light.fibaro_system_fgd212_dimmer_2_level_7_0:
+light.downlights_stue_level_7_0:
   friendly_name: Downlights
 
-light.fibaro_system_fgd212_dimmer_2_level_13_0:
+light.taklys_gang_level_13_0:
   friendly_name: Taklys, gang
 
 light.hue_ambiance_lamp_1:
@@ -17,16 +17,16 @@ light.hue_ambiance_lamp_1:
 light.hue_ambiance_lamp_2:
   friendly_name: Hjørne, ved stol
 
-switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0:
+switch.veggplugg_1_switch_4_0:
   friendly_name: Rensepumpe
 
-sensor.fibaro_system_fgwpef_wall_plug_gen5_power_4_4:
+sensor.veggplugg_1_power_4_4:
   friendly_name: Effekt, rensepumpe
 
-switch.fibaro_system_fgwpef_wall_plug_gen5_switch_12_0:
+switch.veggplugg_2_switch_12_0:
   friendly_name: Vaskemaskin
 
-sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_4:
+sensor.veggplugg_2_power_12_4:
   friendly_name: Effekt, Vaskemaskin
 
 switch.bryter_1:
@@ -37,7 +37,7 @@ switch.bryter_3:
   friendly_name: Lampe ved TV
   assumed_state: false
 
-switch.fibaro_system_fgs212_switch_3kw_switch_9_0:
+switch.garasjeport_switch_9_0:
   friendly_name: Garasjeport
 
 sensor.yr_temperature:
@@ -49,7 +49,7 @@ sensor.pws_temp_c:
 sensor.pws_feelslike_c:
   friendly_name: Følt temp ute
 
-binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0:
+binary_sensor.utgangsdor_sensor_8_0:
   friendly_name: Utgangsdør
   device_class: opening
 
@@ -68,10 +68,10 @@ device_tracker.peters7:
 device_tracker.niliasiphone:
   friendly_name: Nilia
 
-climate.remotec_zxt120eu_heating_1_11_1:
+climate.varmepumpe_heating_1_11_1:
   friendly_name: Varmepumpe
 
-sensor.remotec_zxt120eu_temperature_11_1:
+sensor.sensor.varmepumpe_temperature_11_1:
   friendly_name: Gang
 
 sensor.bad_oppe_temperature:

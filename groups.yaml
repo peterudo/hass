@@ -33,9 +33,9 @@ pool_view:
 pool:
   name: Basseng
   entities:
-    - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_4_0
+    - switch.veggplugg_1_switch_4_0
     - sensor.basseng_temperature
-    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_4_4
+    - sensor.veggplugg_1_power_4_4
 
 temperature_view:
   view: yes
@@ -46,7 +46,7 @@ temperature_view:
 temperature:
   name: Temperatur
   entities:
-    - sensor.remotec_zxt120eu_temperature_11_1
+    - sensor.varmepumpe_temperature_11_1
     - sensor.bad_oppe_temperature
     - sensor.bad_nede_temperature
     - sensor.stua_temperature
@@ -72,8 +72,8 @@ livingroom:
   name: Stue
   entities:
     - group.livingroom_scene
-    - light.fibaro_system_fgd212_dimmer_2_level_6_0
-    - light.fibaro_system_fgd212_dimmer_2_level_7_0
+    - light.trappeoppgang_level_6_0
+    - light.downlights_stue_level_7_0
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.bryter_3
@@ -81,10 +81,9 @@ livingroom:
 hall:
   name: Gang
   entities:
-    - light.fibaro_system_fgd212_dimmer_2_level_13_0
-    - climate.remotec_zxt120eu_heating_1_11_1
-    - climate.remotec_zxt120eu_cooling_1_11_2
-    - binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor_8_0
+    - light.taklys_gang_level_13_0
+    - climate.varmepumpe_heating_1_11_1
+    - binary_sensor.utgangsdor_sensor_8_0
 
 masterbedroom:
   name: Soverom
@@ -112,7 +111,7 @@ livingroom_scene:
 garage:
   name: Garasje
   entities:
-    - switch.fibaro_system_fgs212_switch_3kw_switch_9_0
+    - switch.garasjeport_switch_9_0
 
 weather:
   name: Vær
@@ -128,8 +127,8 @@ weather:
 vaskerom:
   name: Vaskerom
   entities:
-    - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_12_0
-    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_12_4
+    - switch.veggplugg_2_switch_12_0
+    - sensor.veggplugg_2_power_12_4
 
 automations:
   name: Automations
