@@ -71,7 +71,7 @@ device_tracker.niliasiphone:
 climate.varmepumpe_heating_1_11_1:
   friendly_name: Varmepumpe
 
-sensor.sensor.varmepumpe_temperature_11_1:
+sensor.varmepumpe_temperature_11_1:
   friendly_name: Gang
 
 sensor.bad_oppe_temperature:
