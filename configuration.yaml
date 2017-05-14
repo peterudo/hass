@@ -26,6 +26,9 @@ influxdb:
   host: !secret influx_host
   username: !secret influx_user
   password: !secret influx_pwd
+  ssl: true
+  verify_ssl: true
+  default_measurement: state
   include:
     entities:
       - sensor.basseng_temperature
