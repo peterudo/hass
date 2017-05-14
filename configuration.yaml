@@ -28,7 +28,6 @@ influxdb:
   password: !secret influx_pwd
   ssl: true
   verify_ssl: true
-  default_measurement: state
   include:
     entities:
       - sensor.basseng_temperature
