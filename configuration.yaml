@@ -22,6 +22,31 @@ http:
 
 updater:
 
+influxdb:
+  host: !secret influx_host
+  username: !secret influx_user
+  password: !secret influx_pwd
+  include:
+    entities:
+      - sensor.basseng_temperature
+      - sensor.veggplugg_2_power_12_4
+      - sensor.veggplugg_1_power_4_4
+      - sensor.varmepumpe_temperature_11_1
+      - sensor.bad_oppe_temperature
+      - sensor.bad_nede_temperature
+      - sensor.stua_temperature
+      - sensor.spisestua_temperature
+      - sensor.lucas_temperature
+      - switch.veggplugg_1_switch_4_0
+      - light.downlights_stue_level_7_0
+      - light.trappeoppgang_level_6_0
+      - binary_sensor.utgangsdor_sensor_8_0
+  exclude:
+    domains:
+       - automation
+  tags:
+    source: hass
+
 # Discover some devices automatically
 discovery:
 
