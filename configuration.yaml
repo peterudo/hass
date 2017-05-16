@@ -75,6 +75,17 @@ input_boolean: !include input_boolean.yaml
 scene: !include_dir_list scenes/
 device_tracker: !include device_tracker.yaml
 
+light:
+  - platform: mqtt_json
+    name: "SN1 LED"
+    state_topic: "hass/sensornode1"
+    command_topic: "hass/sensornode1/set"
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
+
 # Text to speech
 tts:
   platform: google

@@ -152,3 +152,4 @@ sensornode1_card:
     - sensor.sn1_humidity
     - sensor.sn1_ldr
     - sensor.sn1_motion
+    - sensor.sn1_led
