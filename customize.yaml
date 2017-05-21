@@ -80,8 +80,8 @@ sensor.bad_oppe_temperature:
 sensor.bad_nede_temperature:
   friendly_name: Bad, nede
 
-sensor.stua_temperature:
-  friendly_name: Stua
+sensor.ute_temperature:
+  friendly_name: Ute
 
 sensor.spisestua_temperature:
   friendly_name: Spisestua

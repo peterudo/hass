@@ -36,7 +36,7 @@ influxdb:
       - sensor.varmepumpe_temperature_11_1
       - sensor.bad_oppe_temperature
       - sensor.bad_nede_temperature
-      - sensor.stua_temperature
+      - sensor.ute_temperature
       - sensor.spisestua_temperature
       - sensor.lucas_temperature
       - switch.veggplugg_1_switch_4_0
