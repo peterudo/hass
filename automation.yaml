@@ -160,7 +160,7 @@
     - platform: state
       entity_id: input_slider.basseng_temp_min
   condition:
-    - platform: template
+    - condition: template
       value_template: '{{ float(states("sensor.basseng_temperature")) < float(states("input_slider.basseng_temp_min")) }}'
   action:
     service: switch.turn_on
@@ -173,7 +173,7 @@
     - platform: state
       entity_id: input_slider.basseng_temp_max
   condition:
-    - platform: template
+    - condition: template
       value_template: '{{ float(states("sensor.basseng_temperature")) >= float(states("input_slider.basseng_temp_max")) }}'
   action:
     service: switch.turn_off
