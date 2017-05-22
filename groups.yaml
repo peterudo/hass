@@ -36,6 +36,8 @@ pool:
     - switch.veggplugg_1_switch_4_0
     - sensor.basseng_temperature
     - sensor.veggplugg_1_power_4_4
+    - input_slider.basseng_temp_max
+    - input_slider.basseng_temp_min
 
 temperature_view:
   view: yes
