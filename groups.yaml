@@ -141,6 +141,8 @@ automations:
     - automation.nilia_hjemme_fra_skolen
     - automation.turn_off_lights_at_night
     - automation.turn_on_lights_before_sunset
+    - automation.basseng_renseanlegg_off
+    - automation.basseng_renseanlegg_on
 
 tracker:
   - device_tracker.hildes7

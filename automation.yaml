@@ -155,18 +155,18 @@
 
 - alias: Basseng, renseanlegg on
   trigger:
-    - below: '27'
+    - platform: template
       entity_id: sensor.basseng_temperature
-      platform: numeric_state
+      value_template: '{{ float(states("sensor.basseng_temperature")) < float(states("input_slider.basseng_temp_min")) }}'
   action:
     service: switch.turn_on
     entity_id: switch.veggplugg_1_switch_4_0
 
 - alias: Basseng, renseanlegg off
   trigger:
-    - above: '28'
+    - platform: template
       entity_id: sensor.basseng_temperature
-      platform: numeric_state
+      value_template: '{{ float(states("sensor.basseng_temperature")) >= float(states("input_slider.basseng_temp_max")) }}'
   action:
     service: switch.turn_off
     entity_id: switch.veggplugg_1_switch_4_0
