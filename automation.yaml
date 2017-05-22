@@ -152,3 +152,21 @@
   action:
     service: scene.turn_on
     entity_id: scene.all_off
+
+- alias: Basseng, renseanlegg on
+  trigger:
+    - below: '27'
+      entity_id: sensor.basseng_temperature
+      platform: numeric_state
+  action:
+    service: switch.turn_on
+    entity_id: switch.veggplugg_1_switch_4_0
+
+- alias: Basseng, renseanlegg off
+  trigger:
+    - above: '28'
+      entity_id: sensor.basseng_temperature
+      platform: numeric_state
+  action:
+    service: switch.turn_off
+    entity_id: switch.veggplugg_1_switch_4_0
