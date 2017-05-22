@@ -68,7 +68,8 @@ climate:
   platform: zwave
 
 switch: !include switches.yaml
-automation: !include automation.yaml
+automation: !include automations.yaml
+automation old: !include automation_old.yaml
 sensor: !include_dir_list sensors/
 binary_sensor: !include binary_sensor.yaml
 input_boolean: !include input_boolean.yaml
