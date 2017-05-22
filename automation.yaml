@@ -155,6 +155,11 @@
 
 - alias: Basseng, renseanlegg on
   trigger:
+    - platform: state
+      entity_id: sensor.basseng_temperature
+    - platform: state
+      entity_id: input_slider.basseng_temp_min
+  condition:
     - platform: template
       value_template: '{{ float(states("sensor.basseng_temperature")) < float(states("input_slider.basseng_temp_min")) }}'
   action:
@@ -163,6 +168,11 @@
 
 - alias: Basseng, renseanlegg off
   trigger:
+    - platform: state
+      entity_id: sensor.basseng_temperature
+    - platform: state
+      entity_id: input_slider.basseng_temp_max
+  condition:
     - platform: template
       value_template: '{{ float(states("sensor.basseng_temperature")) >= float(states("input_slider.basseng_temp_max")) }}'
   action:
