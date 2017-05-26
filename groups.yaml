@@ -143,6 +143,8 @@ automations:
     - automation.turn_on_lights_before_sunset
     - automation.basseng_renseanlegg_off
     - automation.basseng_renseanlegg_on
+    - automation.hall_lights_on
+    - automation.hall_lights_off
 
 tracker:
   - device_tracker.hildes7
