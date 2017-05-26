@@ -84,7 +84,7 @@ hall:
   name: Gang
   entities:
     - light.taklys_gang_level_13_0
-    - climate.varmepumpe_heating_1_11_1
+    - binary_sensor.gang_sensor_14_0
     - binary_sensor.utgangsdor_sensor_8_0
 
 masterbedroom:
