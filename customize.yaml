@@ -107,6 +107,6 @@ sensor.spisestua_temperature:
 sensor.lucas_temperature:
   friendly_name: Lucas
 
-media_player.tv_stue:
+switch.tv:
   emulated_hue: true
   emulated_hue_name: 'TV'
