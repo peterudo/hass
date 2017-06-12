@@ -4,6 +4,8 @@ sensor.basseng_temperature:
 
 light.trappeoppgang_level_6_0:
   friendly_name: Trapp/gang oppe
+  emulated_hue: true
+  emulated_hue_name: 'Stairs lights'
 
 light.downlights_stue_level_7_0:
   friendly_name: Downlights
@@ -27,6 +29,8 @@ light.hue_ambiance_lamp_2:
 
 switch.veggplugg_1_switch_4_0:
   friendly_name: Rensepumpe
+  emulated_hue: true
+  emulated_hue_name: 'Pool'
 
 sensor.veggplugg_1_power_4_4:
   friendly_name: Effekt, rensepumpe
@@ -100,3 +104,7 @@ sensor.spisestua_temperature:
 
 sensor.lucas_temperature:
   friendly_name: Lucas
+
+media_player.tv_stue:
+  emulated_hue: true
+  emulated_hue_name: 'TV'
