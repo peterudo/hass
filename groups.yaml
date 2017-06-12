@@ -79,6 +79,7 @@ livingroom:
     - light.hue_ambiance_lamp_2
     - switch.bryter_1
     - switch.bryter_3
+    - switch.tv
 
 hall:
   name: Gang
