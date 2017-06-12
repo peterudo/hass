@@ -55,6 +55,8 @@ switch.bryter_3:
 
 switch.garasjeport_switch_9_0:
   friendly_name: Garasjeport
+  emulated_hue: true
+  emulated_hue_name: 'Garage'
 
 sensor.yr_temperature:
   friendly_name: Yr
