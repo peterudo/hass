@@ -130,7 +130,7 @@ mqtt:
   username: rudolfsen
   password: !secret mqtt_password
 
-  emulated_hue:
-    type: alexa
-    host_ip: 192.168.0.218
-    # listen_port: 8300
+emulated_hue:
+  type: alexa
+  host_ip: 192.168.0.218
+  # listen_port: 8300
