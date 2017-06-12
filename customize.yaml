@@ -1,4 +1,4 @@
-sensor.basseng_temperature:
+sensor.pool_temperature:
   friendly_name: Basseng
   icon: mdi:pool
 
@@ -98,7 +98,7 @@ sensor.bad_oppe_temperature:
 sensor.bad_nede_temperature:
   friendly_name: Bad, nede
 
-sensor.ute_temperature:
+sensor.outside_temperature:
   friendly_name: Ute
 
 sensor.spisestua_temperature:

@@ -1,0 +1,8 @@
+intents:
+  TemperatureIntent:
+    speech:
+      type: plaintext
+      text: >
+        The {{ Location }} temperature is
+        {{ states("sensor." + Location.replace(" ", "_") + "_temperature") }}
+        degrees.

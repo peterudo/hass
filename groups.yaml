@@ -34,7 +34,7 @@ pool:
   name: Basseng
   entities:
     - switch.veggplugg_1_switch_4_0
-    - sensor.basseng_temperature
+    - sensor.pool_temperature
     - sensor.veggplugg_1_power_4_4
     - input_slider.basseng_temp_max
     - input_slider.basseng_temp_min
@@ -48,13 +48,13 @@ temperature_view:
 temperature:
   name: Temperatur
   entities:
-    - sensor.ute_temperature
+    - sensor.outside_temperature
     - sensor.varmepumpe_temperature_11_1
     - sensor.bad_oppe_temperature
     - sensor.bad_nede_temperature
     - sensor.spisestua_temperature
     - sensor.lucas_temperature
-    - sensor.basseng_temperature
+    - sensor.pool_temperature
 
 system:
   view: yes

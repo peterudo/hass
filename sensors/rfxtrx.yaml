@@ -2,11 +2,11 @@ platform: rfxtrx
 automatic_add: True
 devices:
   085007058700001559:
-    name: Basseng
+    name: Pool
   08500700c30000f579:
     name: Bad_oppe
   08500702d40000d379:
-    name: Ute
+    name: Outside
   08500703e70000e779:
     name: Lucas
   08500701fe0000d459:

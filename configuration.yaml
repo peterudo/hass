@@ -30,13 +30,13 @@ influxdb:
   verify_ssl: true
   include:
     entities:
-      - sensor.basseng_temperature
+      - sensor.pool_temperature
       - sensor.veggplugg_2_power_12_4
       - sensor.veggplugg_1_power_4_4
       - sensor.varmepumpe_temperature_11_1
       - sensor.bad_oppe_temperature
       - sensor.bad_nede_temperature
-      - sensor.ute_temperature
+      - sensor.outside_temperature
       - sensor.spisestua_temperature
       - sensor.lucas_temperature
       - switch.veggplugg_1_switch_4_0
@@ -75,6 +75,7 @@ input_boolean: !include input_boolean.yaml
 input_slider: !include input_slider.yaml
 scene: !include_dir_list scenes/
 device_tracker: !include device_tracker.yaml
+alexa: !include alexa.yaml
 
 light:
   - platform: mqtt_json
