@@ -4,10 +4,10 @@ entities:
     state: on
   switch.bryter_1:
     state: on
-  light.trappeoppgang_level_6_0:
+  light.trappeoppgang_level:
     state: on
     brightness: 100
-  light.downlights_stue_level_7_0:
+  light.downlights_stue_level:
     state: on
     brightness: 100
   light.hue_ambiance_lamp_2:

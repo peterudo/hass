@@ -2,17 +2,17 @@ sensor.pool_temperature:
   friendly_name: Basseng
   icon: mdi:pool
 
-light.trappeoppgang_level_6_0:
+light.trappeoppgang_level:
   friendly_name: Trapp/gang oppe
   emulated_hue: true
   emulated_hue_name: 'Stairs lights'
 
-light.downlights_stue_level_7_0:
+light.downlights_stue_level:
   friendly_name: Downlights
   emulated_hue: true
   emulated_hue_name: 'Downlights'
 
-light.taklys_gang_level_13_0:
+light.taklys_gang_level:
   friendly_name: Taklys, gang
   emulated_hue: true
   emulated_hue_name: 'Hall lights'
@@ -27,18 +27,18 @@ light.hue_ambiance_lamp_2:
   emulated_hue: true
   emulated_hue_name: 'Chair light'
 
-switch.veggplugg_1_switch_4_0:
+switch.veggplugg_1_switch:
   friendly_name: Rensepumpe
   emulated_hue: true
   emulated_hue_name: 'Pool'
 
-sensor.veggplugg_1_power_4_4:
+sensor.veggplugg_1_power:
   friendly_name: Effekt, rensepumpe
 
-switch.veggplugg_2_switch_12_0:
+switch.veggplugg_2_switch:
   friendly_name: Vaskemaskin
 
-sensor.veggplugg_2_power_12_4:
+sensor.veggplugg_2_power:
   friendly_name: Effekt, Vaskemaskin
 
 switch.bryter_1:
@@ -53,7 +53,7 @@ switch.bryter_3:
   emulated_hue: true
   emulated_hue_name: 'TV lamp'
 
-switch.garasjeport_switch_9_0:
+switch.garasjeport_switch:
   friendly_name: Garasjeport
   emulated_hue: true
   emulated_hue_name: 'Garage'
@@ -67,7 +67,7 @@ sensor.pws_temp_c:
 sensor.pws_feelslike_c:
   friendly_name: Følt temp ute
 
-binary_sensor.utgangsdor_sensor_8_0:
+binary_sensor.utgangsdor_sensor:
   friendly_name: Utgangsdør
   device_class: opening
 
@@ -86,10 +86,10 @@ device_tracker.peters7:
 device_tracker.niliasiphone:
   friendly_name: Nilia
 
-climate.varmepumpe_heating_1_11_1:
+climate.varmepumpe_heating_1:
   friendly_name: Varmepumpe
 
-sensor.varmepumpe_temperature_11_1:
+sensor.varmepumpe_temperature:
   friendly_name: Gang
 
 sensor.bad_oppe_temperature:
