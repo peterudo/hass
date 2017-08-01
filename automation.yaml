@@ -112,7 +112,7 @@
       to: home
   condition:
     - condition: time
-      at: '13:00:00'
+      after: '13:00:00'
       before: '15:00:00'
       weekday:
         - mon
@@ -148,7 +148,7 @@
       minutes: 10
   condition:
     - condition: time
-      at: '23:30:00'
+      after: '23:30:00'
   action:
     service: scene.turn_on
     entity_id: scene.all_off
