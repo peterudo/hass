@@ -1,11 +1,11 @@
-basseng_temp_max:
+pool_temp_max:
   name: Basseng temp, max
   initial: 30
   min: 20
-  max: 30
+  max: 33
   step: 0.1
 
-basseng_temp_min:
+pool_temp_min:
   name: Basseng temp, min
   initial: 29
   min: 20
