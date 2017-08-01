@@ -1,4 +1,5 @@
 - alias: Remote kraftig lys
+  initial_state: True
   trigger:
     - platform: event
       event_type: button_pressed
@@ -8,6 +9,7 @@
       entity_id: scene.kraftig_lys
 
 - alias: Remote dempet lys
+  initial_state: True
   trigger:
     - platform: event
       event_type: button_pressed
@@ -17,6 +19,7 @@
       entity_id: scene.dempet_lys
 
 - alias: Door bad closing
+  initial_state: True
   trigger:
     - platform: event
       event_type: button_pressed
@@ -29,6 +32,7 @@
      entity_id: input_boolean.door_bad
 
 - alias: Door bad opening
+  initial_state: True
   trigger:
     - platform: event
       event_type: button_pressed
@@ -41,6 +45,7 @@
      entity_id: input_boolean.door_bad
 
 - alias: Turn off lights at night
+  initial_state: True
   trigger:
     - platform: time
       at: '23:40:00'
@@ -49,6 +54,7 @@
     entity_id: scene.all_off
 
 - alias: Turn on lights before sunset
+  initial_state: True
   trigger:
     - platform: sun
       event: sunset
@@ -58,6 +64,7 @@
     entity_id: scene.kraftig_lys
 
 - alias: Demp lys kveld
+  initial_state: True
   trigger:
     - platform: sun
       event: sunset
@@ -67,6 +74,7 @@
     entity_id: scene.dempet_lys
 
 - alias: Alle borte
+  initial_state: True
   trigger:
     - platform: state
       entity_id: group.tracker
@@ -77,6 +85,7 @@
     entity_id: scene.all_off
 
 - alias: Good morning
+  initial_state: True
   trigger:
     - platform: time
       at: 07:30
@@ -106,6 +115,7 @@
         volume_level: 0.4
 
 - alias: Nilia hjemme fra skolen
+  initial_state: True
   trigger:
     - platform: state
       entity_id: device_tracker.niliasiphone
@@ -127,23 +137,25 @@
         message: Er hjemme
 
 - alias: Turn on living room lights when there is movement
+  initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
-    state: 'motion detected'
+    to: 'motion detected'
   condition:
     - condition: state
       entity_id: group.livingroom
-      state: 'off'
+      to: 'off'
   action:
     service: scene.turn_on
     entity_id: scene.dempet_lys
 
 - alias: Turn off light after last movement at night
+  initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
-    state: 'standby'
+    to: 'standby'
     for:
       minutes: 10
   condition:
@@ -154,19 +166,21 @@
     entity_id: scene.all_off
 
 - alias: Hall lights, on
+  initial_state: True
   trigger:
     platform: state
     entity_id: binary_sensor.gang_sensor
-    state: 'on'
+    to: 'on'
   action:
     service: light.turn_on
     entity_id: light.taklys_gang_level
 
 - alias: Hall lights, off
+  initial_state: True
   trigger:
     platform: state
     entity_id: binary_sensor.gang_sensor
-    state: 'off'
+    to: 'off'
     for:
       minutes: 10
   action:
@@ -174,6 +188,7 @@
     entity_id: light.taklys_gang_level
 
 - alias: Basseng, renseanlegg on
+  initial_state: True
   trigger:
     - platform: state
       entity_id: sensor.pool_temperature
@@ -187,6 +202,7 @@
     entity_id: switch.veggplugg_1_switch
 
 - alias: Basseng, renseanlegg off
+  initial_state: True
   trigger:
     - platform: state
       entity_id: sensor.pool_temperature
