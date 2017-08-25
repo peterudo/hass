@@ -22,32 +22,32 @@ http:
 
 updater:
 
-influxdb:
-  host: !secret influx_host
-  username: !secret influx_user
-  password: !secret influx_pwd
-  ssl: true
-  verify_ssl: true
-  include:
-    entities:
-      - sensor.pool_temperature
-      - sensor.veggplugg_2_power
-      - sensor.veggplugg_1_power
-      - sensor.varmepumpe_temperature
-      - sensor.bad_oppe_temperature
-      - sensor.bad_nede_temperature
-      - sensor.outside_temperature
-      - sensor.spisestua_temperature
-      - sensor.lucas_temperature
-      - switch.veggplugg_1_switch
-      - light.downlights_stue_level
-      - light.trappeoppgang_level
-      - binary_sensor.utgangsdor_sensor
-  exclude:
-    domains:
-       - automation
-  tags:
-    source: hass
+# influxdb:
+#   host: !secret influx_host
+#   username: !secret influx_user
+#   password: !secret influx_pwd
+#   ssl: true
+#   verify_ssl: true
+#   include:
+#     entities:
+#       - sensor.pool_temperature
+#       - sensor.veggplugg_2_power
+#       - sensor.veggplugg_1_power
+#       - sensor.varmepumpe_temperature
+#       - sensor.bad_oppe_temperature
+#       - sensor.bad_nede_temperature
+#       - sensor.outside_temperature
+#       - sensor.spisestua_temperature
+#       - sensor.lucas_temperature
+#       - switch.veggplugg_1_switch
+#       - light.downlights_stue_level
+#       - light.trappeoppgang_level
+#       - binary_sensor.utgangsdor_sensor
+#   exclude:
+#     domains:
+#        - automation
+#   tags:
+#     source: hass
 
 # Discover some devices automatically
 discovery:
