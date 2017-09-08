@@ -137,6 +137,7 @@ automations:
   name: Automations
   entities:
     - automation.alle_borte
+    - automation.turn_on_living_room_lights_when_there_is_movement
     - automation.demp_lys_kveld
     - automation.good_morning
     - automation.nilia_hjemme_fra_skolen
