@@ -225,7 +225,7 @@
     service: light.turn_on
     data:
       entity_id: light.downlights_stue_level
-      brightness: 100
+      brightness: 255
 
 - alias: Dim downlights
   initial_state: True
@@ -239,4 +239,4 @@
     service: light.turn_on
     data:
       entity_id: light.downlights_stue_level
-      brightness: 35
+      brightness: 57
