@@ -239,4 +239,4 @@
     service: light.turn_on
     data:
       entity_id: light.downlights_stue_level
-      brightness: 20
+      brightness: 60
