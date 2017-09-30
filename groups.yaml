@@ -148,7 +148,7 @@ automations:
     - automation.hall_lights_on
     - automation.hall_lights_off
     - automation.switch_on_downlights
-    - automation.switch_off_downlights
+    - automation.dim_downlights
 
 tracker:
   - device_tracker.hildes7

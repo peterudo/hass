@@ -223,17 +223,20 @@
     to: 'motion detected'
   action:
     service: light.turn_on
-    entity_id: light.downlights_stue_level
+    data:
+      entity_id: light.downlights_stue_level
+      brightness: 100
 
-- alias: Switch off downlights
+- alias: Dim downlights
   initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
     to: 'standby'
     for:
-      seconds: 30
+      seconds: 10
   action:
-    service: light.turn_off
-    entity_id: light.downlights_stue_level
-
+    service: light.turn_on
+    data:
+      entity_id: light.downlights_stue_level
+      brightness: 20
