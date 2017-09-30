@@ -216,7 +216,7 @@
     entity_id: switch.veggplugg_1_switch
 
 - alias: Switch on downlights
-  intial_state: True
+  initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
@@ -226,7 +226,7 @@
     entity_id: light.downlights_stue_level
 
 - alias: Switch off downlights
-  intial_state: True
+  initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
