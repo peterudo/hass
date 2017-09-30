@@ -222,10 +222,12 @@
     entity_id: sensor.sn1_motion
     to: 'motion detected'
   action:
-    service: light.turn_on
-    data:
-      entity_id: light.downlights_stue_level
-      brightness: 255
+    - service: light.turn_on
+      data:
+        entity_id: light.downlights_stue_level
+        brightness: 255
+    - service: switch.turn_on
+      entity_id: switch.bryter_3
 
 - alias: Dim downlights
   initial_state: True
@@ -236,7 +238,9 @@
     for:
       seconds: 10
   action:
-    service: light.turn_on
-    data:
-      entity_id: light.downlights_stue_level
-      brightness: 57
+    - service: light.turn_on
+      data:
+        entity_id: light.downlights_stue_level
+        brightness: 57
+    - service: switch.turn_off
+      entity_id: switch.bryter_3
