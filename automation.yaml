@@ -215,34 +215,23 @@
     service: switch.turn_off
     entity_id: switch.veggplugg_1_switch
 
-- alias: Scary music on
+- alias: Scary music
   initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
     to: 'motion detected'
   action:
-    - service: media_player.turn_on
-      entity_id: media_player.audio_1
-    - service: media_player.select_source
-      data:
-        entity_id: media_player.spotify
-        source: Audio 1
     - service: media_player.play_media
       data:
         entity_id: media_player.spotify
         media_content_type: music
         media_content_id: spotify:track:2LlQb7Uoj1kKyGhlkBf9aC
-
-- alias: Scary music off
-  initial_state: True
-  trigger:
-    platform: state
-    entity_id: sensor.sn1_motion
-    to: 'standby'
-    for:
-      seconds: 30
-  action:
+    - service: automation.turn_off
+      entity_id: automation.scary_music_on
+    - delay: "00:00:30"
+    - service: automation.turn_on
+      entity_id: automation.scary_music_on
     - service: media_player.media_stop
       data:
         entity_id: media_player.spotify
