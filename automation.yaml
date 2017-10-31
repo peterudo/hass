@@ -215,32 +215,34 @@
     service: switch.turn_off
     entity_id: switch.veggplugg_1_switch
 
-- alias: Switch on downlights
+- alias: Scary music on
   initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
     to: 'motion detected'
   action:
-    - service: light.turn_on
+    - service: media_player.turn_on
+      entity_id: media_player.audio_1
+    - service: media_player.select_source
       data:
-        entity_id: light.downlights_stue_level
-        brightness: 255
-    - service: switch.turn_on
-      entity_id: switch.bryter_3
+        entity_id: media_player.spotify
+        source: Audio 1
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.spotify
+        media_content_type: song
+        media_content_id: spotify:track:2LlQb7Uoj1kKyGhlkBf9aC
 
-- alias: Dim downlights
+- alias: Scary music off
   initial_state: True
   trigger:
     platform: state
     entity_id: sensor.sn1_motion
     to: 'standby'
     for:
-      seconds: 10
+      seconds: 30
   action:
-    - service: light.turn_on
+    - service: media_player.media_stop
       data:
-        entity_id: light.downlights_stue_level
-        brightness: 57
-    - service: switch.turn_off
-      entity_id: switch.bryter_3
+        entity_id: media_player.spotify
