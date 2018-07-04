@@ -72,7 +72,7 @@ automation: !include automation.yaml
 sensor: !include_dir_list sensors/
 binary_sensor: !include binary_sensor.yaml
 input_boolean: !include input_boolean.yaml
-input_slider: !include input_slider.yaml
+input_number: !include input_number.yaml
 scene: !include_dir_list scenes/
 device_tracker: !include device_tracker.yaml
 alexa: !include alexa.yaml
