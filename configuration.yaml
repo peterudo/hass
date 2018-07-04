@@ -79,6 +79,8 @@ device_tracker: !include device_tracker.yaml
 alexa: !include alexa.yaml
 
 light:
+  - platform: rfxtrx
+    automatic_add: True
   - platform: mqtt_json
     name: "SN1 LED"
     state_topic: "hass/sensornode1"
