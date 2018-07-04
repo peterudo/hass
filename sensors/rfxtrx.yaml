@@ -1,7 +1,7 @@
 platform: rfxtrx
 automatic_add: True
 devices:
-  0a5209040e01012d2a0169:
+  0a52093bb701010e2b0179:
     name: Pool
   08500700c30000f579:
     name: Bad_oppe
