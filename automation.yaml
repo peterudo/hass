@@ -59,7 +59,7 @@
     entity_id: scene.all_off
 
 - alias: Good morning
-  initial_state: True
+  initial_state: False
   trigger:
     - platform: time
       at: 07:30
@@ -89,7 +89,7 @@
         volume_level: 0.4
 
 - alias: Nilia hjemme fra skolen
-  initial_state: True
+  initial_state: False
   trigger:
     - platform: state
       entity_id: device_tracker.niliasiphone
@@ -111,7 +111,7 @@
         message: Er hjemme
 
 - alias: Turn on living room lights when there is movement
-  initial_state: True
+  initial_state: False
   trigger:
     platform: state
     entity_id: binary_sensor.sn1_motion
@@ -125,7 +125,7 @@
     entity_id: scene.dempet_lys
 
 - alias: Turn off light after last movement at night
-  initial_state: True
+  initial_state: False
   trigger:
     platform: state
     entity_id: binary_sensor.sn1_motion
@@ -162,7 +162,7 @@
     entity_id: light.taklys_gang_level
 
 - alias: Basseng, renseanlegg on
-  initial_state: True
+  initial_state: False
   trigger:
     - platform: state
       entity_id: sensor.pool_temperature
@@ -176,7 +176,7 @@
     entity_id: switch.veggplugg_1_switch
 
 - alias: Basseng, renseanlegg off
-  initial_state: True
+  initial_state: False
   trigger:
     - platform: state
       entity_id: sensor.pool_temperature
@@ -190,7 +190,7 @@
     entity_id: switch.veggplugg_1_switch
 
 - alias: Scary music
-  initial_state: True
+  initial_state: False
   trigger:
     platform: state
     entity_id: binary_sensor.sn1_motion
