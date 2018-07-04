@@ -1,11 +1,3 @@
-- platform: template
-  sensors:
-    door_bad:
-      friendly_name: "Badedør oppe"
-      value_template: "{{ states.input_boolean.door_bad.state == 'on' }}"
-      device_class: opening
-      entity_id: input_boolean.door_bad
-
 - platform: mqtt
   state_topic: "hass/sensornode1"
   name: "SN1 Motion"
@@ -16,3 +8,6 @@
 
 - platform: rfxtrx
   automatic_add: True
+  devices:
+    0a14110900017f01010070:
+      name: Bathroom upstairs
