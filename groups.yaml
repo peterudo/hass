@@ -36,8 +36,8 @@ pool:
     - switch.veggplugg_1_switch
     - sensor.pool_temperature
     - sensor.veggplugg_1_power
-    - input_slider.pool_temp_max
-    - input_slider.pool_temp_min
+    - input_number.pool_temp_max
+    - input_number.pool_temp_min
 
 temperature_view:
   view: yes
