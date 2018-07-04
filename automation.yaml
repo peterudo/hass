@@ -140,7 +140,7 @@
   initial_state: True
   trigger:
     platform: state
-    entity_id: sensor.sn1_motion
+    entity_id: binary_sensor.sn1_motion
     to: 'motion detected'
   condition:
     - condition: state
@@ -154,7 +154,7 @@
   initial_state: True
   trigger:
     platform: state
-    entity_id: sensor.sn1_motion
+    entity_id: binary_sensor.sn1_motion
     to: 'standby'
     for:
       minutes: 10
@@ -219,7 +219,7 @@
   initial_state: True
   trigger:
     platform: state
-    entity_id: sensor.sn1_motion
+    entity_id: binary_sensor.sn1_motion
     to: 'motion detected'
   action:
     - service: media_player.play_media
