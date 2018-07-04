@@ -13,3 +13,6 @@
   payload_on: "motion detected"
   payload_off: "standby"
   value_template: '{{ value_json.motion }}'
+
+- platform: rfxtrx
+  automatic_add: True
