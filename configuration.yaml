@@ -74,6 +74,7 @@ sensor: !include_dir_list sensors/
 binary_sensor: !include binary_sensor.yaml
 # input_boolean: !include input_boolean.yaml
 input_number: !include input_number.yaml
+input_datetime: !include input_datetime.yaml
 scene: !include_dir_list scenes/
 device_tracker: !include device_tracker.yaml
 alexa: !include alexa.yaml

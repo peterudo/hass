@@ -28,16 +28,30 @@ pool_view:
   view: yes
   icon: mdi:pool
   entities:
-    - group.pool
+    - group.pool_control
+    - group.pool_temperature_control
+    - group.pool_time_control
 
-pool:
+pool_control:
   name: Basseng
   entities:
     - switch.veggplugg_1_switch
     - sensor.pool_temperature
     - sensor.veggplugg_1_power
+
+pool_temperature_control:
+  name: Temperaturstyring
+  entities:
     - input_number.pool_temp_max
     - input_number.pool_temp_min
+    - automation.basseng_renseanlegg_off
+    - automation.basseng_renseanlegg_on
+
+pool_time_control:
+  name: Tidsstyring
+  entities:
+    - input_datetime.pool_start_at
+    - input_datetime.pool_end_at
 
 temperature_view:
   view: yes
@@ -63,12 +77,13 @@ system:
     - group.network
 
 network:
-  name: Nettverk
+  name: System
   icon: mdi:chart-pie
   entities:
     - sensor.external_ip
     - sensor.disk_use_
     - sensor.since_last_boot
+    - sensor.time
 
 livingroom:
   name: Stue
@@ -143,8 +158,6 @@ automations:
     - automation.nilia_hjemme_fra_skolen
     - automation.turn_off_lights_at_night
     - automation.turn_on_lights_before_sunset
-    - automation.basseng_renseanlegg_off
-    - automation.basseng_renseanlegg_on
     - automation.hall_lights_on
     - automation.hall_lights_off
     - automation.switch_on_downlights
