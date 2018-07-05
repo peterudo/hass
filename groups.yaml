@@ -52,6 +52,8 @@ pool_time_control:
   entities:
     - input_datetime.pool_start_at
     - input_datetime.pool_end_at
+    - automation.basseng_tidsstyring_start
+    - automation.basseng_tidsstyring_stopp
 
 temperature_view:
   view: yes
@@ -162,7 +164,6 @@ automations:
     - automation.hall_lights_off
     - automation.switch_on_downlights
     - automation.dim_downlights
-    - automation.scary_music
 
 tracker:
   - device_tracker.hildes7

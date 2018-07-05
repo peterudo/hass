@@ -189,22 +189,20 @@
     service: switch.turn_off
     entity_id: switch.veggplugg_1_switch
 
-- alias: Scary music
+- alias: Basseng tidsstyring, start
   initial_state: False
   trigger:
-    platform: state
-    entity_id: binary_sensor.sn1_motion
-    to: 'motion detected'
+    platform: template
+    value_template: "{{ states('sensor.time') == (states.input_datetime.pool_start_at.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
   action:
-    - service: media_player.play_media
-      data:
-        entity_id: media_player.spotify
-        media_content_type: music
-        media_content_id: spotify:track:2LlQb7Uoj1kKyGhlkBf9aC
-    - service: automation.turn_off
-      entity_id: automation.scary_music
-    - delay: "00:01:30"
-    - service: automation.turn_on
-      entity_id: automation.scary_music
-    - service: media_player.media_play_pause
-      entity_id: media_player.spotify
+    service: switch.turn_on
+    entity_id: switch.veggplugg_1_switch
+
+- alias: Basseng tidsstyring, stopp
+  initial_state: False
+  trigger:
+    platform: template
+    value_template: "{{ states('sensor.time') == (states.input_datetime.pool_end_at.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+  action:
+    service: switch.turn_off
+    entity_id: switch.veggplugg_1_switch

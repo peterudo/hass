@@ -2,8 +2,10 @@ pool_start_at:
   name: Start renseanlegg kl
   has_date: false
   has_time: true
+  initial: '09:00'
 
 pool_end_at:
   name: Stopp renseanlegg kl
   has_date: false
   has_time: true
+  initial: '12:00'
