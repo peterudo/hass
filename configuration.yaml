@@ -66,7 +66,10 @@ logbook:
 sun:
 
 climate:
-  platform: zwave
+  - platform: zwave
+  - platform: melcloud
+    email: !secret melcloud_email
+    password: !secret melcloud_password
 
 switch: !include_dir_list switches/
 automation: !include automation.yaml
