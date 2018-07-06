@@ -1,3 +1,9 @@
+climate.melcloud_gang_102468:
+  friendly_name: Varmepumpe gang
+
+climate.melcloud_spisestue_99080:
+  friendly_name: Varmepumpe stue
+
 sensor.pool_temperature:
   friendly_name: Basseng
   icon: mdi:pool
