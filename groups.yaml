@@ -97,10 +97,12 @@ livingroom:
     - switch.bryter_1
     - switch.bryter_3
     - switch.tv
+    - climate.melcloud_spisestue_99080
 
 hall:
   name: Gang
   entities:
+    - climate.melcloud_gang_102468
     - light.taklys_gang_level
     - binary_sensor.gang_sensor
     - binary_sensor.utgangsdor_sensor
