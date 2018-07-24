@@ -35,9 +35,9 @@ pool_view:
 pool_control:
   name: Basseng
   entities:
-    - switch.veggplugg_1_switch
+    - switch.veggplugg_2_switch
     - sensor.pool_temperature
-    - sensor.veggplugg_1_power
+    - sensor.veggplugg_2_power
 
 pool_temperature_control:
   name: Temperaturstyring

@@ -173,7 +173,7 @@
       value_template: '{{ float(states("sensor.pool_temperature")) < float(states("input_number.pool_temp_min")) }}'
   action:
     service: switch.turn_on
-    entity_id: switch.veggplugg_1_switch
+    entity_id: switch.veggplugg_2_switch
 
 - alias: Basseng, renseanlegg off
   initial_state: False
@@ -187,7 +187,7 @@
       value_template: '{{ float(states("sensor.pool_temperature")) >= float(states("input_number.pool_temp_max")) }}'
   action:
     service: switch.turn_off
-    entity_id: switch.veggplugg_1_switch
+    entity_id: switch.veggplugg_2_switch
 
 - alias: Basseng tidsstyring, start
   initial_state: False
@@ -196,7 +196,7 @@
     value_template: "{{ states('sensor.time') == (states.input_datetime.pool_start_at.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
   action:
     service: switch.turn_on
-    entity_id: switch.veggplugg_1_switch
+    entity_id: switch.veggplugg_2_switch
 
 - alias: Basseng tidsstyring, stopp
   initial_state: False
@@ -205,4 +205,4 @@
     value_template: "{{ states('sensor.time') == (states.input_datetime.pool_end_at.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
   action:
     service: switch.turn_off
-    entity_id: switch.veggplugg_1_switch
+    entity_id: switch.veggplugg_2_switch

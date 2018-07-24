@@ -40,7 +40,7 @@ updater:
 #       - sensor.outside_temperature
 #       - sensor.spisestua_temperature
 #       - sensor.lucas_temperature
-#       - switch.veggplugg_1_switch
+#       - switch.veggplugg_2_switch
 #       - light.downlights_stue_level
 #       - light.trappeoppgang_level
 #       - binary_sensor.utgangsdor_sensor

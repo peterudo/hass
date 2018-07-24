@@ -33,15 +33,15 @@ light.hue_ambiance_lamp_2:
   emulated_hue: true
   emulated_hue_name: 'Chair light'
 
-switch.veggplugg_1_switch:
+switch.veggplugg_2_switch:
   friendly_name: Rensepumpe
   emulated_hue: true
   emulated_hue_name: 'Pool'
 
-sensor.veggplugg_1_power:
+sensor.veggplugg_2_power:
   friendly_name: Effekt, rensepumpe
 
-switch.veggplugg_2_switch:
+switch.veggplugg_1_switch:
   friendly_name: Vaskemaskin
 
 sensor.veggplugg_2_power:
