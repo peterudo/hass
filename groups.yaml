@@ -149,8 +149,8 @@ weather:
 vaskerom:
   name: Vaskerom
   entities:
-    - switch.veggplugg_2_switch
-    - sensor.veggplugg_2_power
+    - switch.veggplugg_1_switch
+    - sensor.veggplugg_1_power
 
 automations:
   name: Automations
