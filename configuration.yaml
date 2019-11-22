@@ -6,6 +6,12 @@ homeassistant:
   unit_system: metric
   time_zone: Europe/Oslo
   customize: !include customize.yaml
+  auth_providers:
+    - type: trusted_networks
+      trusted_networks:
+        - 127.0.0.1
+        - 192.168.10.0/24
+  # api_password: !secret http_password
 
 frontend:
 config:
@@ -16,13 +22,6 @@ http:
   base_url: !secret http_base_url
   ssl_certificate: !secret ssl_cert_path
   ssl_key: !secret ssl_key_path
-
-auth_providers:
-  - type: trusted_networks
-    trusted_networks:
-      - 127.0.0.1
-      - 192.168.10.0/24
-# api_password: !secret http_password
 
 updater:
 
@@ -108,10 +107,10 @@ notify:
   - name: push
     platform: pushbullet
     api_key: !secret pb_apikey
-  - name: html5
-    platform: html5
-    gcm_api_key: !secret gcm_api_key
-    gcm_sender_id: !secret gcm_sender_id
+  # - name: html5
+  #   platform: html5
+  #   gcm_api_key: !secret gcm_api_key
+  #   gcm_sender_id: !secret gcm_sender_id
 
 zwave:
   usb_path: /dev/ttyACM0
