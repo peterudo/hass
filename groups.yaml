@@ -83,8 +83,8 @@ network:
   icon: mdi:chart-pie
   entities:
     - sensor.external_ip
-    - sensor.disk_use_
-    - sensor.since_last_boot
+    # - sensor.disk_use
+    - sensor.last_boot
     - sensor.time
 
 livingroom:
