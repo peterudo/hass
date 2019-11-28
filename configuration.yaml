@@ -72,9 +72,9 @@ tradfri:
 
 climate:
   - platform: zwave
-  # - platform: melcloud
-  #   email: !secret melcloud_email
-  #   password: !secret melcloud_password
+  - platform: melcloud
+    email: !secret melcloud_email
+    password: !secret melcloud_password
 
 switch: !include_dir_list switches/
 automation: !include automation.yaml
@@ -148,11 +148,11 @@ mqtt:
   username: rudolfsen
   password: !secret mqtt_password
 
-emulated_hue:
-  type: alexa
-  host_ip: 192.168.0.218
-  expose_by_default: false
-  off_maps_to_on_domains:
-    - script
-    - scene
+# emulated_hue:
+#   type: alexa
+#   host_ip: 192.168.0.218
+#   expose_by_default: false
+#   off_maps_to_on_domains:
+#     - script
+#     - scene
   # listen_port: 8300
