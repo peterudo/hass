@@ -10,7 +10,6 @@ default_view:
     - group.weather
     - group.vaskerom
     - group.automations
-    - device_tracker.hildes7
     - device_tracker.peters7
     - device_tracker.niliasiphone
 
@@ -168,7 +167,6 @@ automations:
     - automation.dim_downlights
 
 tracker:
-  - device_tracker.hildes7
   - device_tracker.peters7
   - device_tracker.niliasiphone
 
